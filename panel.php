@@ -1,0 +1,423 @@
+<?php
+
+function get_query($for) {
+    
+    try {   
+    
+         require 'database-config.php';
+
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $sql = "SELECT * FROM form WHERE status in ('$for') LIMIT 10";
+
+        
+    
+        foreach ($dbh->query($sql) as $row) {
+        $sid= $row['app_id'];
+             $row['amt_asked'] == "" ? $amt='N/A' : $amt=$row['amt_asked'];
+            if($row['status']=="HAG"||$row['status']=="REEVAL_HAG") {$length = 20; $status="HAG";}
+            elseif($row['status']=="I_ADMIN"||$row['status']=="REEVAL_IADMIN") {$length = 40;$status="Ins. Admin";}
+            elseif($row['status']=="ACP"||$row['status']=="REEVAL_ACP") {$length = 60;$status="ACP";}
+            elseif($row['status']=="DCP"||$row['status']=="REEVAL_DCP") {$length = 80;$status="DCP";}
+            elseif($row['status']=="APPROVED") {$length = 100;$status="APPROVED";}
+            
+            $medical = "";
+            $panelid =$sid."query";
+            
+            $sql1= "SELECT * FROM medical WHERE app_id=$sid";
+            foreach($dbh->query($sql1) as $row1){
+                $medical = $medical."<div class='panel-body'><b>$row1[treatment]</b> : $row1[total]</div>";
+            }
+            echo "<div class='container'>
+              <div class='panel-group'>
+                <div class='panel panel-default'>
+                  <div class='panel-heading'>
+                    <h4 class='panel-title'>
+                      <a data-toggle='collapse' href='#$panelid'>$row[applicant_name]</a>&emsp;$row[claim_type]
+                    </h4>
+                  </div>
+                   <div id='$panelid' class='panel-collapse collapse'>
+                   <div class='progress'>
+    <div class='progress-bar' role='progressbar' aria-valuemin='0' aria-valuemax='100' style='width:$length%'>
+      $status
+    </div>
+  </div>
+                     <div class='row'><div class='col-md-12'> $medical</div></div>
+                    <div class='col-md-6'>
+                    <div class='panel-body'><b>Rank</b> : $row[rank]</div>
+                    <div class='panel-body'><b> Relation </b>:  $row[relation]</div>
+                    <div class='panel-body'><b> Hospital Name </b>:  $row[hospital_name]</div>
+                    <div class='panel-body'><b> Police Station No. </b>:  $row[police_station_no]</div>
+                    <div class='panel-body'><b>SI No </b> : $row[si_no]</div>
+                   </div>
+                    <div class='col-md-6'>
+                     <div class='panel-body'><b>Diary No </b> : $row[diary_no]</div>
+                     <div class='panel-body'><b> CGHS Category </b>:  $row[a_cghs_category]</div>
+                     <div class='panel-body'><b> Disease </b>:  $row[disease]</div>
+                     <div class='panel-body'><b> Applicate Date </b>:  $row[application_date]</div>
+                     <div class='panel-body'><b> Mark </b>:  $row[amt_asked]</div>
+                    </div>
+                    <form class='form-horizontal panel-body' role='form' id='formfield' method='POST' action='update.php' style='margin-left:0px'>
+                    <div class='form-group' >
+                     <label for='inputComment' class='col-md-1 control-label'>Comments</label>
+                    <div class='col-md-11'>
+                     <input type='text' class='form-control' id='inputComment' name='inputComment' placeholder='Comment' />
+                    </div>
+                    </div>
+                    <input type='hidden' name='sid' value='$sid'>
+                            <div class='form-group panel-body'>
+                                <button type='submit' name='approve_btn' class='btn btn-success'>Approve</button>
+                                <button type='submit' name='reval_btn' class='btn btn-warning'>Re-Eval</button>
+                      </form>
+                  </div>
+                  
+                    </div>
+                </div>
+              </div>
+            </div>";
+            
+             }
+        
+
+
+    }
+    catch(PDOException $e) {
+        echo $sql . "<br>" . $e->getMessage();
+    }
+
+    $conn = null;
+}
+
+function get_query_dealing($for) {
+    
+    try {   
+    
+         require 'database-config.php';
+
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $sql = "SELECT * FROM form WHERE status in ('$for') LIMIT 10";
+    
+        foreach ($dbh->query($sql) as $row) {
+        $sid= $row['app_id'];
+            $row['amt_asked'] == "" ? $amt='N/A' : $amt=$row['amt_asked'];
+            if($row['status']=="HAG"||$row['status']=="REEVAL_HAG") {$length = 20; $status="HAG";}
+            elseif($row['status']=="I_ADMIN"||$row['status']=="REEVAL_IADMIN") {$length = 40;$status="Ins. Admin";}
+            elseif($row['status']=="ACP"||$row['status']=="REEVAL_ACP") {$length = 60;$status="ACP";}
+            elseif($row['status']=="DCP"||$row['status']=="REEVAL_DCP") {$length = 80;$status="DCP";}
+             elseif($row['status']=="APPROVED") {$length = 100;$status="APPROVED";}
+            
+            $medical = "";
+            $panelid =$sid."deal";
+            $sql1= "SELECT * FROM medical WHERE app_id=$sid";
+            foreach($dbh->query($sql1) as $row1){
+                $medical = $medical."<div class='panel-body'><b>$row1[treatment]</b> : $row1[total]</div>";
+            }
+            echo "<div class='container'>
+              <div class='panel-group'>
+                <div class='panel panel-default'>
+                  <div class='panel-heading'>
+                    <h4 class='panel-title'>
+                      <a data-toggle='collapse' href='#$panelid'><b>$row[applicant_name]</b></a>&emsp;$row[claim_type]
+                    </h4>
+                  </div>
+                  <div id='$panelid' class='panel-collapse collapse'>
+                  <div class='progress'>
+    <div class='progress-bar' role='progressbar' aria-valuemin='0' aria-valuemax='100' style='width:$length%'>
+      $status
+    </div>
+  </div>
+                     <div class='row'><div class='col-md-12'> $medical</div></div>
+                    <div class='row'>
+                    <div class='col-md-6'>
+                    <div class='panel-body'><b>Rank</b> : $row[rank]</div>
+                    <div class='panel-body'><b> Relation </b>:  $row[relation]</div>
+                    <div class='panel-body'><b> Hospital Name </b>:  $row[hospital_name]</div>
+                    <div class='panel-body'><b> Police Station No. </b>:  $row[police_station_no]</div>
+                    </div>
+                    <div class='col-md-6'>
+                    <div class='panel-body'><b>Diary No </b> : $row[diary_no]</div>
+                    <div class='panel-body'><b> CGHS Category </b>:  $row[a_cghs_category]</div>
+                    <div class='panel-body'><b> Disease </b>:  $row[disease]</div>
+                    <div class='panel-body'><b> Applicate Date </b>:  $row[application_date]</div>
+                    <div class='panel-body'><b> Amount asked </b>:  $amt </div>
+                    <div class='form-group panel-body'>
+                               <form action='utils/download.php' method='post' id='search_form' target='_blank'>
+<input type='hidden' value='$sid' name='id'>
+<div class='row'>";
+getbuttons($row['claim_type']);
+echo "</div>
+</form>
+                    </div>            
+                    </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>";
+            
+             }
+ 
+
+    }
+    catch(PDOException $e) {
+        echo $sql . "<br>" . $e->getMessage();
+    }
+
+    $conn = null;
+}
+
+function get_query_approved($for) {
+    
+     try {   
+    
+         require 'database-config.php';
+
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $sql = "SELECT * FROM form WHERE status in ('$for') LIMIT 10";
+    
+        foreach ($dbh->query($sql) as $row) {
+        $sid= $row['app_id'];
+            $row['amt_asked'] == "" ? $amt='N/A' : $amt=$row['amt_asked'];
+            if($row['status']=="HAG"||$row['status']=="REEVAL_HAG") {$length = 20; $status="HAG";}
+            elseif($row['status']=="I_ADMIN"||$row['status']=="REEVAL_IADMIN") {$length = 40;$status="Ins. Admin";}
+            elseif($row['status']=="ACP"||$row['status']=="REEVAL_ACP") {$length = 60;$status="ACP";}
+            elseif($row['status']=="DCP"||$row['status']=="REEVAL_DCP") {$length = 80;$status="DCP";}
+              elseif($row['status']=="APPROVED") {$length = 100;$status="APPROVED";}
+            
+            $medical = "";
+            $panelid =$sid."approved";
+            $sql1= "SELECT * FROM medical WHERE app_id=$sid";
+            foreach($dbh->query($sql1) as $row1){
+                $medical = $medical."<div class='panel-body'><b>$row1[treatment]</b> : $row1[total]</div>";
+            }
+            echo "<div class='container'>
+              <div class='panel-group'>
+                <div class='panel panel-default'>
+                  <div class='panel-heading'>
+                    <h4 class='panel-title'>
+                      <a data-toggle='collapse' href='#$panelid'><b>$row[applicant_name]</b></a>&emsp;$row[claim_type]
+                    </h4>
+                  </div>
+                  <div id='$panelid' class='panel-collapse collapse'>
+                  <div class='progress'>
+    <div class='progress-bar' role='progressbar' aria-valuemin='0' aria-valuemax='100' style='width:$length%'>
+      $status
+    </div>
+  </div>
+                     <div class='row'><div class='col-md-12'> $medical</div></div>
+                    <div class='row'>
+                    <div class='col-md-6'>
+                    <div class='panel-body'><b>Rank</b> : $row[rank]</div>
+                    <div class='panel-body'><b> Relation </b>:  $row[relation]</div>
+                    <div class='panel-body'><b> Hospital Name </b>:  $row[hospital_name]</div>
+                    <div class='panel-body'><b> Police Station No. </b>:  $row[police_station_no]</div>
+                    </div>
+                    <div class='col-md-6'>
+                    <div class='panel-body'><b>Diary No </b> : $row[diary_no]</div>
+                    <div class='panel-body'><b> CGHS Category </b>:  $row[a_cghs_category]</div>
+                    <div class='panel-body'><b> Disease </b>:  $row[disease]</div>
+                    <div class='panel-body'><b> Applicate Date </b>:  $row[application_date]</div>
+                    <div class='panel-body'><b> Amount asked </b>:  $amt </div>
+                    <div class='form-group panel-body'>
+                               <form action='utils/download.php' method='post' id='search_form' target='_blank'>
+<input type='hidden' value='$sid' name='id'>
+<div class='row'>";
+getbuttons($row['claim_type']);
+echo "</div>
+</form>
+                    </div>            
+                    </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>";
+            
+             }
+ 
+
+    }
+    catch(PDOException $e) {
+        echo $sql . "<br>" . $e->getMessage();
+    }
+
+    $conn = null;
+}
+
+function get_query_reeval($for) {
+    
+    try {   
+    
+         require 'database-config.php';
+
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $sql = "SELECT * FROM form WHERE status in ('$for') LIMIT 10";
+
+        
+    
+        foreach ($dbh->query($sql) as $row) {
+        $sid= $row['app_id'];
+            $row['amt_asked'] == "" ? $amt='N/A' : $amt=$row['amt_asked'];
+            if($row['status']=="HAG"||$row['status']=="REEVAL_HAG") {$length = 20; $status="HAG";}
+            elseif($row['status']=="I_ADMIN"||$row['status']=="REEVAL_IADMIN") {$length = 40;$status="Ins. Admin";}
+            elseif($row['status']=="ACP"||$row['status']=="REEVAL_ACP") {$length = 60;$status="ACP";}
+            elseif($row['status']=="DCP"||$row['status']=="REEVAL_DCP") {$length = 80;$status="DCP";}
+             elseif($row['status']=="APPROVED") {$length = 100;$status="APPROVED";}
+            
+        $medical = "";
+        $panelid =$sid."reeval";
+        $sql1= "SELECT * FROM medical WHERE app_id=$sid";
+        foreach($dbh->query($sql1) as $row1){
+            $medical = $medical."<div class='panel-body'><b>$row1[treatment]</b> : $row1[total]</div>";
+        }
+            echo "<div class='container'>
+              <div class='panel-group'>
+                <div class='panel panel-default'>
+                  <div class='panel-heading'>
+                    <h4 class='panel-title'>
+                      <a data-toggle='collapse' href='#$panelid'>$row[applicant_name]</a>&emsp;$row[claim_type]
+                    </h4>
+                  </div>
+                  <div id='$panelid' class='panel-collapse collapse'>
+                  <div class='progress'>
+    <div class='progress-bar' role='progressbar' aria-valuemin='0' aria-valuemax='100' style='width:$length%'>
+      $status
+    </div>
+  </div>
+                     <div class='row'><div class='col-md-12'> $medical</div></div>
+                    <div class='row'>
+                    <div class='col-md-6'>
+                    <div class='panel-body'><b>Rank</b> : $row[rank]</div>
+                    <div class='panel-body'><b> Relation </b>:  $row[relation]</div>
+                    <div class='panel-body'><b> Hospital Name </b>:  $row[hospital_name]</div>
+                    <div class='panel-body'><b> Police Station No. </b>:  $row[police_station_no]</div>
+                    <div class='panel-body'><b>SI No </b> : $row[si_no]</div>
+                    </div>
+                    <div class='col-md-6'>
+                    <div class='panel-body'><b>Diary No </b> : $row[diary_no]</div>
+                    <div class='panel-body'><b> CGHS Category </b>:  $row[a_cghs_category]</div>
+                    <div class='panel-body'><b> Disease </b>:  $row[disease]</div>
+                    <div class='panel-body'><b> Applicate Date </b>:  $row[application_date]</div>
+                    <div class='panel-body'><b> Mark </b>:  $row[amt_asked]</div>
+                    </div>
+                    </div>
+                    <div class='form-group panel-body'>
+                               <form action='utils/download.php' method='post' id='search_form' target='_blank'>
+                                <input type='hidden' value='$sid' name='id'>
+                                <div class='row'>
+                                    <div class='col-md-3'><button type='submit' class='btn btn-info' name='reeval'>Re-Eval</button></div>
+                                </div>
+                                </form>
+                    </div>
+                    
+                    </div>
+                </div>
+              </div>
+            </div>";
+            
+             }
+ 
+
+    }
+    catch(PDOException $e) {
+        echo $sql . "<br>" . $e->getMessage();
+    }
+
+    $conn = null;
+}
+function get_query_dcp($for) {
+    
+    try {   
+    
+         require 'database-config.php';
+
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $sql = "SELECT app_id, applicant_name, pis, rank, relation, hospital_name, hospital_address, police_station_no, si_no, diary_no, ref_hospital_name, a_cghs_category, disease, application_date, amt_asked, amt_granted FROM form WHERE status in ('$for') LIMIT 10";
+
+        
+    
+        foreach ($dbh->query($sql) as $row) {
+        $sid= $row['app_id'];
+    $panelid =$sid."dcp";
+            echo "<div class='container'>
+              <div class='panel-group'>
+                <div class='panel panel-default'>
+                  <div class='panel-heading'>
+                    <h4 class='panel-title'>
+                      <a data-toggle='collapse' href='#$panelid'>$row[applicant_name]</a>
+                    </h4>
+                  </div>
+                   <div id='$panelid' class='panel-collapse collapse'>
+                    <div class='col-md-6'>
+                    <div class='panel-body'><b>Rank</b> : $row[rank]</div>
+                    <div class='panel-body'><b> Relation </b>:  $row[relation]</div>
+                    <div class='panel-body'><b> Hospital Name </b>:  $row[hospital_name]</div>
+                    <div class='panel-body'><b> Police Station No. </b>:  $row[police_station_no]</div>
+                    <div class='panel-body'><b>SI No </b> : $row[si_no]</div>
+                   </div>
+                    <div class='col-md-6'>
+                     <div class='panel-body'><b>Diary No </b> : $row[diary_no]</div>
+                     <div class='panel-body'><b> CGHS Category </b>:  $row[a_cghs_category]</div>
+                     <div class='panel-body'><b> Disease </b>:  $row[disease]</div>
+                     <div class='panel-body'><b> Applicate Date </b>:  $row[application_date]</div>
+                     <div class='panel-body'><b> Mark </b>:  $row[amt_asked]</div>
+                    </div>
+                    <form class='form-horizontal panel-body' role='form' id='formfield' method='POST' action='update.php' style='margin-left:0px'>
+                    <div class='form-group' >
+                     <label for='inputComment' class='col-md-1 control-label'>Comments</label>
+                    <div class='col-md-11'>
+                     <input type='text' class='form-control' id='inputComment' name='inputComment' placeholder='Comment' />
+                    </div>
+                    </div>
+                    <input type='hidden' name='sid' value='$sid'>
+                            <div class='form-group panel-body'>
+                                <button type='submit' name='approve_btn' class='btn btn-success'>Approve</button>
+                                <button type='submit' name='reval_btn' class='btn btn-warning'>Re-Eval</button>
+                                <button type='submit' name='deny_btn' class='btn btn-danger'>Deny</button>
+                  </form>
+                  </div>
+                  
+                    </div>
+                </div>
+              </div>
+            </div>";
+            
+             }
+        
+
+
+    }
+    catch(PDOException $e) {
+        echo $sql . "<br>" . $e->getMessage();
+    }
+
+    $conn = null;
+}
+
+function getbuttons($case){
+    switch ($case){
+    case "PERMISSION":
+        echo "<div class='col-md-3'><button type='submit' class='btn btn-info' name='form12_btn'>Notesheet</button></div>
+        <div class='col-md-3'><button type='submit' class='btn btn-info'name='form13_btn'>Permission</button></div>";
+        break;
+    case "CREDIT":
+        echo "<div class='col-md-3'><button type='submit' class='btn btn-info' name='form10_btn'>Notesheet</button></div>
+        <div class='col-md-3'><button type='submit' class='btn btn-info'name='form1_btn'>Permission</button></div>";
+        break;
+    case "OP_REFERRAL":
+        echo "<div class='col-md-3'><button type='submit' class='btn btn-info' name='form2_btn'>Permission</button></div>
+        <div class='col-md-3'><button type='submit' class='btn btn-info'name='form4_btn'>Calculation Sheet</button></div>";
+        break;
+    case "OP_EMERGENCY":
+        echo "<div class='col-md-3'><button type='submit' class='btn btn-info' name='form7_btn'>Permission</button></div>
+        <div class='col-md-3'><button type='submit' class='btn btn-info'name='form4_btn'>Calculation Sheet</button>
+        </div>
+        <div class='col-md-3'><button type='submit' class='btn btn-info'name='form9_btn'>Order</button></div>";
+        break;   
+    }
+}
+?>

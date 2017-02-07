@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data-set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<s_no>1</s_no>
+		<cghs>Consultation OPD</cghs>
+		<non_nabh>150</non_nabh>
+		<nabh>150</nabh>
+	</record>
+	<record>
+		<s_no>2</s_no>
+		<cghs>Consultation- for Inpatients</cghs>
+		<non_nabh>300</non_nabh>
+		<nabh>300</nabh>
+	</record>
+	<record>
+		<s_no>3</s_no>
+		<cghs>Dressings of wounds</cghs>
+		<non_nabh>50</non_nabh>
+		<nabh>58</nabh>
+	</record>
+	<record>
+		<s_no>4</s_no>
+		<cghs>Suturing of wounds with local anesthesia</cghs>
+		<non_nabh>108</non_nabh>
+		<nabh>124</nabh>
+	</record>
+	<record>
+		<s_no>5</s_no>
+		<cghs>Aspiration Plural Effusion - Diagnostic</cghs>
+		<non_nabh>120</non_nabh>
+		<nabh>138</nabh>
+	</record>
+	<record>
+		<s_no>6</s_no>
+		<cghs>Aspiration Plural Effusion - Therapeutic</cghs>
+		<non_nabh>193</non_nabh>
+		<nabh>222</nabh>
+	</record>
+	<record>
+		<s_no>7</s_no>
+		<cghs>Abdominal Aspiration - Diagnostic</cghs>
+		<non_nabh>345</non_nabh>
+		<nabh>397</nabh>
+	</record>
+	<record>
+		<s_no>8</s_no>
+		<cghs>Abdominal Aspiration - Therapeutic</cghs>
+		<non_nabh>460</non_nabh>
+		<nabh>529</nabh>
+	</record>
+	<record>
+		<s_no>9</s_no>
+		<cghs>Pericardial Aspiration</cghs>
+		<non_nabh>380</non_nabh>
+		<nabh>437</nabh>
+	</record>
+	<record>
+		<s_no>10</s_no>
+		<cghs>Joints Aspiration</cghs>
+		<non_nabh>317</non_nabh>
+		<nabh>365</nabh>
+	</record>
+	<record>
+		<s_no>11</s_no>
+		<cghs>Biopsy Skin</cghs>
+		<non_nabh>230</non_nabh>
+		<nabh>265</nabh>
+	</record>
+	<record>
+		<s_no>12</s_no>
+		<cghs>Removal of Stitches</cghs>
+		<non_nabh>36</non_nabh>
+		<nabh>41</nabh>
+	</record>
+	<record>
+		<s_no>13</s_no>
+		<cghs>Venesection</cghs>
+		<non_nabh>124</non_nabh>
+		<nabh>143</nabh>
+	</record>
+	<record>
+		<s_no>14</s_no>
+		<cghs>Phimosis Under LA</cghs>
+		<non_nabh>1311</non_nabh>
+		<nabh>1508</nabh>
+	</record>
+	<record>
+		<s_no>15</s_no>
+		<cghs>Sternal puncture</cghs>
+		<non_nabh>173</non_nabh>
+		<nabh>199</nabh>
+	</record>
+	<record>
+		<s_no>16</s_no>
+		<cghs>Injection for Haemorrhoids</cghs>
+		<non_nabh>414</non_nabh>
+		<nabh>476</nabh>
+	</record>
+	<record>
+		<s_no>17</s_no>
+		<cghs>Injection for Varicose Veins</cghs>
+		<non_nabh>350</non_nabh>
+		<nabh>403</nabh>
+	</record>
+	<record>
+		<s_no>18</s_no>
+		<cghs>Catheterisation</cghs>
+		<non_nabh>425</non_nabh>
+		<nabh>500</nabh>
+	</record>
+	<record>
+		<s_no>19</s_no>
+		<cghs>Dilatation of Urethra</cghs>
+		<non_nabh>500</non_nabh>
+		<nabh>575</nabh>
+	</record>
+	<record>
+		<s_no>20</s_no>
+		<cghs>Incision &amp; Drainage</cghs>
+		<non_nabh>420</non_nabh>
+		<nabh>483</nabh>
+	</record>
+	<record>
+		<s_no>21</s_no>
+		<cghs>Intercostal Drainage</cghs>
+		<non_nabh>125</non_nabh>
+		<nabh>144</nabh>
+	</record>
+	<record>
+		<s_no>22</s_no>
+		<cghs>Peritoneal Dialysis</cghs>
+		<non_nabh>1466</non_nabh>
+		<nabh>1686</nabh>
+	</record>
+	<record>
+		<s_no>23</s_no>
+		<cghs>Excision of Moles</cghs>
+		<non_nabh>345</non_nabh>
+		<nabh>397</nabh>
+	</record>
+	<record>
+		<s_no>24</s_no>
+		<cghs>Excision of Warts</cghs>
+		<non_nabh>310</non_nabh>
+		<nabh>357</nabh>
+	</record>
+	<record>
+		<s_no>25</s_no>
+		<cghs>Excision of Molluscum contagiosum</cghs>
+		<non_nabh>130</non_nabh>
+		<nabh>150</nabh>
+	</record>
+	<record>
+		<s_no>26</s_no>
+		<cghs>Excision of Veneral Warts</cghs>
+		<non_nabh>160</non_nabh>
+		<nabh>184</nabh>
+	</record>
+	<record>
+		<s_no>27</s_no>
+		<cghs>Excision of Corns</cghs>
+		<non_nabh>140</non_nabh>
+		<nabh>161</nabh>
+	</record>
+	<record>
+		<s_no>28</s_no>
+		<cghs>I/D Injection Keloid</cghs>
+		<non_nabh>97</non_nabh>
+		<nabh>112</nabh>
+	</record>
+	<record>
+		<s_no>29</s_no>
+		<cghs>Chemical Cautery (s)</cghs>
+		<non_nabh>110</non_nabh>
+		<nabh>127</nabh>
+	</record>
+	<record>
+		<s_no>30</s_no>
+		<cghs>Subconjunctival/subtenon’s injections in one eyes</cghs>
+		<non_nabh>69</non_nabh>
+		<nabh>79</nabh>
+	</record>
+	<record>
+		<s_no>31</s_no>
+		<cghs>Subconjunctival/subtenon’s injections in both eyes</cghs>
+		<non_nabh>138</non_nabh>
+		<nabh>158</nabh>
+	</record>
+	<record>
+		<s_no>32</s_no>
+		<cghs>Pterygium Surgery</cghs>
+		<non_nabh>5500</non_nabh>
+		<nabh>6325</nabh>
+	</record>
+	<record>
+		<s_no>33</s_no>
+		<cghs>Conjunctival Peritomy</cghs>
+		<non_nabh>58</non_nabh>
+		<nabh>67</nabh>
+	</record>
+	<record>
+		<s_no>34</s_no>
+		<cghs>Conjunctival wound repair or exploration following blunt</cghs>
+		<non_nabh>3300</non_nabh>
+		<nabh>3795</nabh>
+	</record>
+	<record>
+		<s_no>35</s_no>
+		<cghs>Removal of corneal foreign body</cghs>
+		<non_nabh>115</non_nabh>
+		<nabh>132</nabh>
+	</record>
+	<record>
+		<s_no>36</s_no>
+		<cghs>Cauterization of ulcer/subconjunctival injection in one eye</cghs>
+		<non_nabh>69</non_nabh>
+		<nabh>79</nabh>
+	</record>
+	<record>
+		<s_no>37</s_no>
+		<cghs>Cauterization of ulcer/subconjunctival injection in both eyes</cghs>
+		<non_nabh>138</non_nabh>
+		<nabh>159</nabh>
+	</record>
+	<record>
+		<s_no>38</s_no>
+		<cghs>Corneal grafting—Penetrating keratoplasty</cghs>
+		<non_nabh>5750</non_nabh>
+		<nabh>6613</nabh>
+	</record>
+	<record>
+		<s_no>39</s_no>
+		<cghs>Corneal grafting—Lamellar keratoplasty</cghs>
+		<non_nabh>5000</non_nabh>
+		<nabh>5750</nabh>
+	</record>
+	<record>
+		<s_no>40</s_no>
+		<cghs>Cyanoacrylate /fibrin glue application for corneal perforation</cghs>
+		<non_nabh>690</non_nabh>
+		<nabh>794</nabh>
+	</record>
+	<record>
+		<s_no>41</s_no>
+		<cghs>Bandage contact lenses for corneal perforation</cghs>
+		<non_nabh>460</non_nabh>
+		<nabh>529</nabh>
+	</record>
+</data-set>
