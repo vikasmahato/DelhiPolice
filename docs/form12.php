@@ -13,11 +13,11 @@ $form12 = "<html lang='en'>
     <script src='js/bootstrap.min.js'></script>
       <div class='container' style='margin-bottom:70px; margin-top:40px; font-size:1.3em;'>
           <h3 style='text-align:center; margin-bottom:40px;'><b><u>NOTE SHEET</u></b></h3>
-          <div>FR:-&nbsp; &nbsp; &nbsp; &nbsp; Diary No. $value[diary_no]/Genl. Br. (SED) dated $value[diary_date]</div>
+          <div>FR:-&nbsp; &nbsp; &nbsp; &nbsp; Diary No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Genl. Br. (SED) dated </div>
           <div  style='margin-top:8px;'>Subject:- <b>An application submitted by $value[applicant_name] regarding grant of permission for taking treatment in empanelled hospital under CGHS.</b></div> 
         <p style='text-indent:12%'>FR along with its enclosures may kindly be persued vide which $value[applicant_name] No. $value[police_station_no] (PIS No. $value[pis]) has requested that he/she may be granted permission for taking treatment of his/her $value[relation] (relation of the patient) in $value[hospital_name] as CMO-CGHS Dispensary/Govt. Hospital. $value[applicant_name] has referred to his/her $value[relation](relation of patient) to any CGHS approved Hospital.</p>
        <p style='text-indent:12%'>In this connection, it is submitted that the CMO-CGHS Dispensary/Govt. Hospital has referred to any CGHS approved Hospital. As such, Addl. DCP/SED (H.O.O) may like to accord permission to $value[applicant_name] for treatment of his/her $value[relation] in $value[hospital_name]. The CGHS beneficiaries having a valid CGHS card ID No. $value[a_cghs_no]. He is entitled for $value[a_cghs_category] ward category (calculated as per basic pay of Govt. Servant).
-         Permission is valid for $value[startdate] w.e.f. $value[enddate].</p>  
+         Permission is valid for &nbsp;&nbsp;&nbsp;/2017 w.e.f. $value[startdate].</p>  
       <div style='margin-top:75px;'><b><u>HAG/SE</u></b></div>
       <div style='margin-top:15px;'><b><u>INSPR. ADMN.</u></b></div>
       <div style='margin-top:15px;'><b><u>ACP/HQ</u></b></div>

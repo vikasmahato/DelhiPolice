@@ -28,8 +28,11 @@ function validateForm(){
 
     var refexpdt = document.forms["myForm"]["refCGHSexp"].value;
     
-
-    if(stDate > edDate)
+    if(edDate=="" && claim=="permit")
+        {
+             formObject.elements["endDate"].value = '2099-01-01';
+        }
+    if(stDate > edDate && claim!="permit")
 
   { 	alert("Invalid period of treatment");
 	return false; 	}

@@ -27,7 +27,7 @@ text-align:center;
       <div class='container' style='margin-top:15px; font-size:1.3em;'>
           <h3 style='text-align:center;'><b><u>OFFICE OF THE DEPUTY COMMISIONER OF POLICE SOUTH EAST DISTRICT,</u></b></h3>
           <h3><u><b>IST FLOOR, POLICE STATION SARITA VIHAR, NEW DELHI-110076.</u></b></h3>
-          <div style='text-align:center'>No. $value[diary_no] / Genl. Br. (SED) dated New Delhi, the $value[dairy_date].</div>
+          <div style='text-align:center'>No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / Genl. Br. (SED) dated New Delhi, the </div>
         <div>To</div>
         <div style='margin-top:15px;margin-left:92px;'>The Deputy Commissioner of Police</div>
         <div style='margin-bottom:10px;margin-left:92px;'>General Administration/PHQ, Delhi</div>

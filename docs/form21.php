@@ -19,7 +19,7 @@ td{
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
     <script src='js/bootstrap.min.js'></script>
       <div class='container' style='margin-bottom:70px; margin-top:40px; font-size:1.3em;'>
-          <div>FR:-&nbsp; &nbsp; &nbsp; &nbsp; <b>Diary No. $value[diary_no]/General Branch/SED, dated $value[diary_date] </b></div>
+          <div>FR:-&nbsp; &nbsp; &nbsp; &nbsp; <b>Diary No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /General Branch/SED, dated </b></div>
 
       <p style='text-indent:12%'>FR may kindly be persued vide which <b>NAME</b> , No. <b>NO</b> has submitted a medical claim of an amounting to Rs. <b>AMOUNT</b> for the medical treatment of his <b>RELATION</b> namely <b>NAME</b> at <b>HOSPITAL</b> on diferent dates after taking prior permission of Head of Office for adjustment of medical advance/reimbursement.</p>
       <p style='text-indent:12%'>In this connection, it is submitted that he has already been sanctioned Rs. <b>AMOUNT</b> as medical advance vide this office order No. ______________/Genl. Br.(SED) dated __________________ (F/A).</p>  

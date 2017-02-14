@@ -19,7 +19,7 @@ $form18 = "<html lang='en'>
           <p style='text-indent:12%'>Expenditure will be met under head '01.01.06-Medical Treatment' during the current financial year 2017-2018.</p>
        <div style='text-align:right;margin-top:50px;'>ASSTT. COMMISSIONER OF POLICE(HQ),</div>
         <div style='margin-bottom:15px; text-align:right;'>SOUTH-EAST DISTRICT, NEW DELHI.</div>
-       <div>No. $value[diary_no]/Genl. Br. (G-5)/SED dated, New Delhi, the $value[diary_date] 2017.</div>    
+       <div>No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Genl. Br. (G-5)/SED dated, New Delhi, the </div>    
        <div style='margin-left:60px;margin-bottom:20px;margin-top:30px;'>Copy forwarded to the :-</div>
        <div>1. &nbsp; &nbsp; &nbsp; PAO-11, (D.P.), Man Singh Road, New Delhi through Accountant/SED.</div> 
        <div>2. &nbsp; &nbsp; &nbsp; Accountant/SED along with all relevant documents/medical papers (in duplicate) for taking further necessary action.</div> 

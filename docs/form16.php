@@ -44,8 +44,8 @@ $form16 = "<html lang='en'>
           <div style='text-align:right'>SOUTH-EAST DISTRICT, NEW DELHI</div>
           <div style='margin-top:20px;'><b>ACP/SHO/INSPECTOR</b>_________________________</div>
           <div style='margin-top:10px;'>to inform and direct _________________________________, accordingly.</div>
-          <div style='margin-top:10px;'>No. $value[diary_no]/G-6/Genl. Br.(SED)</div>
-          <div style='margin-top:10px;'>Dated $value[diary_date].</div>  
+          <div style='margin-top:10px;'>No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/G-6/Genl. Br.(SED)</div>
+          <div style='margin-top:10px;'>Dated </div>  
         </div>  
     </body>
 </html>";

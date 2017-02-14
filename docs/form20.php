@@ -17,7 +17,7 @@ $form20 = "<html lang='en'>
       <div class='container' style='margin:30px 50px; font-size:1.3em;'>
           <h3 style='text-align:center;'><b><u>OFFICE OF THE DEPUTY COMMISSIONER OF POLICE, SOUTH EAST DISTRICT,</u></b></h3>
           <h3 style='text-align:center;'> <b><u>IST FLOOR, POLICE STATION SARITA VIHAR, NEW DELHI-110076.</u></b></h3>
-          <div style='text-align:center'>No. $value[diary_no]  / Genl. Br. (SED) dated New Delhi, the $value[diary_date].</div>
+          <div style='text-align:center'>No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  / Genl. Br. (SED) dated New Delhi, the </div>
         <div>To</div>
         <div style='margin:20px 114px;'>The Dy Commissioner of Police,</div>
         <div style='margin:20px 114px;'>Headquarters, Delhi</div>

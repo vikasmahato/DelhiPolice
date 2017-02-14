@@ -22,7 +22,7 @@
       <div class="info">
          <h2 class="bg-primary">Medical Claim</h2>
          <div class="bg-info">
-          <p class="text-danger">Please use below user combinations</p>
+          <!--<p class="text-danger">Please use below user combinations</p>
           <table class="col-md-6 col-md-offset-3">
             <thead>
                 <th>&nbsp;</th><th>Username</th><th>Password</th>
@@ -34,7 +34,7 @@
                  <tr><th>For Ins. admin</th><td>iadmin</td><td>123456789</td></tr>
                 <tr><th>For HAG</th><td>hag</td><td>123456789</td></tr>
             </tbody>
-          </table>
+          </table>-->
          </div>
        
           <div class="col-md-6 col-md-offset-3">

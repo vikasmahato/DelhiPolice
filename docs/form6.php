@@ -18,7 +18,7 @@ $form6 = "<html lang='en'>
          <div style='margin-top:60px; text-align:right;'><b>ACP/HQ</b></div>
        <div style='text-align:right;'>FOR ADDL. DY. COMMISSIONER OF POLICE,</div>
         <div style='margin-bottom:15px; text-align:right;'>SOUTH-EAST DISTRICT, NEW DELHI.</div>
-       <div>No. $value[diary_no] Genl. Br. (G-6)/SED dated, New Delhi, the $value[diary_date].</div>    
+       <div>No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Genl. Br. (G-6)/SED dated, New Delhi, the </div>    
        <div style='margin-left:60px;margin-bottom:20px;'>Copy forwarded to the :-</div>
        <div>1. &nbsp; &nbsp; &nbsp; PAO-11 (Delhi Police), MHA, Man Singh Road, New Delhi through Accountant/SED.</div> 
        <div>2. &nbsp; &nbsp; &nbsp; Accountant/SED with one spare copy along with all relevant medical papers/documents for arranging the payment to the concerned immediately.</div> 

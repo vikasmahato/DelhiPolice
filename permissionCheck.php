@@ -104,12 +104,17 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <span class="input-group-addon" id="basic-addon3">Enter relation with the CGHS holder:</span>
             <input type="text" class="form-control" id="basic-url" name="relation" placeholder="Relation" >
          </div>
-        <div class="input-group">
+        <!--<div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Period of treatment</span>
             <input type="date" class="form-control" id="periodDate" name="startDate" required >
             <span class="input-group-addon" id="periodTo">To</span>
             <input type="date" class="form-control" id="periodDate" name="endDate" required >
+         </div>-->
+         <div class="input-group">
+            <span class="input-group-addon" id="basic-addon3">Enter the Start Date:</span>
+            <input type="date" class="form-control" id="basic-url" name="startDate" required >
          </div>
+        <input type="hidden" name="endDate" >
          <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Enter the Hospital Name:</span>
             <input type="text" class="form-control" id="basic-url" name="hospitalName" placeholder="Hospital Name" required >

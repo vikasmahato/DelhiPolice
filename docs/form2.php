@@ -25,7 +25,7 @@ $form2 ="<html lang='en'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
     <script src='js/bootstrap.min.js'></script>
       <div class='container'>
-          <div>FR:- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dairy No. $value[diary_no]/ Genl. Br. (SED) dated $value[diary_date].</div>
+          <div>FR:- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dairy No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / Genl. Br. (SED) dated </div>
           <div>SUBJECT:- &nbsp; &nbsp; Regarding reimbursement of Medical Claim in Respect of $value[applicant_name] No. $value[police_station_no]</div>
           <p style='text-indent:17%;'>FR along with its enclosure may kindly be perused vide which $value[applicant_name] No. $value[police_station_no] has stated that he/she/his/her $value[relation] (relation with the principal employee) had taken treatment/test at $value[ref_hospital_name] (Name of Hospital/Lab) which is on panel of CGHS after referred from $value[hospital_name](Name of the CGHS wellness center/Govt. Hospital) and taken prior permission of HOO. He has further stated that an amounting to Rs. $value[amt_asked]/- was incurred on his/her treatment. Now he has requested to reimburse the same as per rules/instructions.
           </p>
