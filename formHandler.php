@@ -45,11 +45,11 @@ if($disease = "")
     $amtAsked = 0;
     
 }
-    elseif($refHospitalname = "")
+    elseif($refHospitalname == "")
 {
      $refHospitalname= "NULL";   
 }
-    
+  
     switch($claim){
             
         case "opref" : $claim_type = "OP_REFERRAL";// ref_log();

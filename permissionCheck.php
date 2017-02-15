@@ -122,9 +122,9 @@ if($_SESSION["sess_userrole"]!="dealing"){
         
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Want Treatment at:</span>
-            <input type="text" class="form-control" id="refHospitalname" name="refHospitalname" placeholder="Referred Hospital Name" required >
+            <input type="text" class="form-control" id="basic-url" name="refHospitalname" placeholder="Referred Hospital Name" required >
          </div>
-                 <div class="input-group">
+        <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Enter the Hospital Address:</span>
             <input type="text" class="form-control" id="basic-url" name="hospitalAddress" placeholder="Address" required >
          </div>
