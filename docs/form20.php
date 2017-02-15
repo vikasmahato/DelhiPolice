@@ -23,7 +23,7 @@ $form20 = "<html lang='en'>
         <div style='margin:20px 114px;'>Headquarters, Delhi</div>
           <div>Subject:- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b>Regarding adjustment of medical advance of Rs. $value[amt_granted] already sanctioned to $value[applicant_name] , No. $value[police_station_no] (PIS No. $value[pis]) for the treatment of his $value[relation] at HOSPITAL from $value[startdate]  to $value[enddate] after referred from $value[hospital_name] and taking permission of Head of Office.</b></div>
         <div>Memo</div>
-          <p style='text-indent:12%'>
+          <p style='text-indent:12%;text-align:justify;'>
               Enclosed please find herewith a medical re-imbursement claim along with all original papers submitted by $value[applicant_name], No. $value[police_station_no] vide which he has intimated that his $value[relation] was under treatment at $value[ref_hospital_name] (on panel of CGHS) for $value[disease] with prior permission of Head of Office. For the purpose, he was granted $value[amt_granted] as medical advance vide PHQ's order No. _______________________ dated  ________________________. As per the M.A. Rules, calculation statement has been prepared which is enclosed herewith. The details of the claim is as under:-</p>
   <table>
           
@@ -45,7 +45,7 @@ $form20 = "<html lang='en'>
           <td>$value[amt_granted]</td>
       </tr>
           </table>
-      <p style='text-indent:12%'>It is, therefore, requested that his medical claim may kindly be considered sympathetically and necessary es-post-facto sanction of the competent authority may kindly be obtained and conveyed to this office at an early date. The documents recieved  along with the application are sent herewith for ready reference and return requested.</p>
+      <p style='text-indent:12%;text-align:justify;'>It is, therefore, requested that his medical claim may kindly be considered sympathetically and necessary es-post-facto sanction of the competent authority may kindly be obtained and conveyed to this office at an early date. The documents recieved  along with the application are sent herewith for ready reference and return requested.</p>
           <div style='text-align:right;font-weight:bold;margin-top:40px;'><b>ACP/HQ</b></div>
 <div class='row'>
     <div class='col-md-4'>Encls ;- <strong><u>As above</u></strong></div>

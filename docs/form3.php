@@ -32,7 +32,7 @@ table {
         <div style='margin-bottom:10px;margin-left:92px;'>General Administration/PHQ, Delhi</div>
           <div>Subject:- &nbsp;&nbsp;Regarding medical re-imbursement claim in respect of $value[applicant_name] No. $value[police_station_no].</div>
         <div style='margin-top:5px;'>Memo</div>
-          <p style='text-indent:12%;'>
+          <p style='text-indent:12%;text-align:justify;'>
              It is informed that $value[applicant_name] was admitted in $value[hospital_name] Hospital in emergency. The treatment was taken by the patient in CGHS recognized Hospital on credit basis. Now, the hospital authority has submitted a medical claim (in duplicate) for reimbursement. As per the C.S.M.A. Rules, calculations statement has been prepared which is enclosed herewith. The details of the claim is as under:-
           </p>
     
@@ -57,7 +57,7 @@ table {
 
     </tbody>
   </table>
-    <p style='text-indent:12%;'>
+    <p style='text-indent:12%;text-align:justify;'>
         It is therefore, requested that necessary ex-past facto permission may kindly be obtained from the component authority and conveyed to this office at an early date. Funds are available under head “01.01.06 Medical Treatment” during the current financial year 2016-17.
     </p>
     <div style='text-align:right;font-weight:bold;margin-top:25px;'>ACP/HQ</div>

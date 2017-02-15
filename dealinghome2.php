@@ -56,8 +56,8 @@ if($_SESSION["sess_userrole"]!="dealing"){
         <li><a href="emgChecklist.php">OP-Emergency</a></li>
         <li><a href="ip_refChecklist.php">IP-Referral</a></li>
         <li><a href="ip_emgChecklist.php">Emergency Credit</a></li>
-          <li><a href="creditCheck.php">Credit</a></li>
-          <li><a href="permissionCheck.php">Permission</a></li>
+          <li><a href="creditCheck.php">P. Credit</a></li>
+          <li><a href="permissionCheck.php">P. Treatment</a></li>
          <!-- <li role="presentation" class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
       Advance <span class="caret"></span>

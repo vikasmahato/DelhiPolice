@@ -39,6 +39,7 @@ $value = array();
            else if (isset($_POST['form14_btn'])) {generate($value, '14');}
            else if (isset($_POST['form15_btn'])) {generate($value, '15');}
            else if (isset($_POST['form16_btn'])) {generate($value, '16');}
+          else if (isset($_POST['form22_btn'])) {generate($value, '22');}
 }
 
 function generate($value, $s){
@@ -58,6 +59,7 @@ function generate($value, $s){
     
     require '../docs/form12.php';
     require '../docs/form13.php';
+    require '../docs/form22.php';
 ini_set('display_errors', 1);
 
     $dompdf = new DOMPDF();

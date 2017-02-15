@@ -1,5 +1,10 @@
 <?php 
-
+$string1 = "";
+$string2 = "$value[a_cghs_no]";
+if($value[relation]!="own"){
+    $string1 = "$value[relation] of";
+    $string2 = "$value[r_cghs_no]";
+}
 $form13 = "<html lang='en'>
   <head>
     <meta charset='utf-8'>
@@ -23,15 +28,15 @@ $form13 = "<html lang='en'>
         <div style='margin-top:30px;text-align:center;'>No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ Genl. Br. (SED) dated New Delhi, the </div>
         <div>To</div>
         <div><div style='margin-left:100px;'>The Medical Superintendent,</div>
-        <div style='margin-left:100px;margin-top:20px;'>________________________</div>
-        <div style='margin-left:100px;margin-top:20px;'>________________________</div>
+        <div style='margin-left:100px;margin-top:20px;'>$value[ref_hospital_name]</div>
+        <div style='margin-left:100px;margin-top:20px;'>$value[hospital_address]</div>
         </div>
         <div style='margin-top:20px;'>Subject:- &nbsp;&nbsp;&nbsp;Regarding permission for taking treatment in respect of
-        <div style='margin-left:100px;margin-top:20px;'> _______________________________________________</div>
+        <div style='margin-left:100px;margin-top:20px;'>$string1 $value[applicant_name]</div>
         <div>Sir,</div>
-        <p style='text-indent:12%;'>
-            In accordance with Ministry of Health & Family Welfare, Govt. Of India, Nirman Bhawan, New Delhi's O.M. No. S.11011/23/2009-CGHS D.II/Hospital Cell/CGHS(Part-1), dated 17.08.2010 at para-4 on the subject cited above. The Addl. Deputy Commissioner of Police (H.O.O.) South-East District, New Delhi is pleased to accord permission to $value[applicant_name] No. $value[police_station_no] (PIS No. $value[pis]) for treatment in respect of his/her $value[relation] at above said Hospital for a period of &nbsp;&nbsp;&nbsp; w.e.f. $value[startdate].</p>
-          <p style='text-indent:12%;'>He/She is a member of CGHS having token card No. $value[a_cghs_no]. He/She is entitled for $value[a_cghs_category] ward category.</p>
+        <p style='text-indent:12%;text-align:justify;'>
+            In accordance with Ministry of Health & Family Welfare, Govt. Of India, Nirman Bhawan, New Delhi's O.M. No. S.11011/23/2009-CGHS D.II/Hospital Cell/CGHS(Part-1), dated 17.08.2010 at para-4 on the subject cited above. The Addl. Deputy Commissioner of Police (H.O.O.) South-East District, New Delhi is pleased to accord permission to $value[applicant_name] No. $value[police_station_no] (PIS No. $value[pis]) for treatment in respect of his/her $value[relation] at above said Hospital for a period of______________ w.e.f. $value[startdate].</p>
+          <p style='text-indent:12%;text-align:justify;'>He/She is a member of CGHS having token card No. $string2. He/She is entitled for $value[a_cghs_category] ward category.</p>
       <div style='text-align:right;margin-bottom:40px;margin-top:30px;'>Yours faithfully,</div>
       <div style='text-align:right;margin-top:60px;'>ASSTT. COMMINISSONER OF POLICE (HQ),</div>
       <div style='text-align:right'>SOUTH EAST DISTRICT, NEW DELHI.</div>

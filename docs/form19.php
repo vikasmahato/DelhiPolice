@@ -18,12 +18,12 @@ $form9 = "<html lang='en'>
         <div style='margin:20px 114px;'>Headquarters, Delhi</div>
           <div>Subject:- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b>Regarding sanction of medical advance in respect of $value[applicant_name] , No. $value[police_station_no] (PIS No. $value[pis] ) for the treatment of his $value[relation] at $value[ref_hospital_name].</b></div>
         <div>Memo</div>
-          <p style='text-indent:12%'>
+          <p style='text-indent:12%;text-align:justify;'>
               I am to state that $value[applicant_name] , No. $value[police_station_no] has filed an application to grant medical advance as his $value[relation] is suffering from $value[disease] at$value[ref_hospital_name] after referred from $value[hospital_name] and obtaining necessary permission of Head of Office. Now, the doctor of said hospital has given an estimate of Rs. $value[amt_asked] to be spent on his treatment.</p>
   
-    <p style='text-indent:12%'>
+    <p style='text-indent:12%;text-align:justify;'>
        In this regard, it is stated that $value[ref_hospital_name] is empanelled under CGHS and as per CGHS instructions, medical advance upto 80% of the estimate i.e. <b>Amount</b> can be sanctioned to the CGHS beneficiary for the treatment of his $value[relation]. The funds are available under head '01.01.06 Medical Treament' during the current financial year 2017-2018. Necessary Fund Avaibility Certificate, Check-List and calculation sheet etc. duly typed are enclosed herewith for ready refernece.</p>
-      <p style='text-indent:12%'>It is, therefore, requested that necessary sanction of Rs. $value[amt_granted] (Rupees $rupee_word) in favour of $value[ref_hospital_name] may please be obtained from the competent authority and conveyed to this office at an early date. The documents recieved along with the application are sent herewith (in duplicate) for ready reference and return requested.</p>
+      <p style='text-indent:12%;text-align:justify;'>It is, therefore, requested that necessary sanction of Rs. $value[amt_granted] (Rupees $rupee_word) in favour of $value[ref_hospital_name] may please be obtained from the competent authority and conveyed to this office at an early date. The documents recieved along with the application are sent herewith (in duplicate) for ready reference and return requested.</p>
           <div style='text-align:right;font-weight:bold;margin-top:40px;'><b>ACP/HQ</b></div>
 <div class='row'>
     <div class='col-md-4'>Encls ;- <strong><u>As above</u></strong></div>

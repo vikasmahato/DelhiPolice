@@ -79,14 +79,14 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <span class="input-group-addon" id="basic-addon3">Enter rank:</span>
             <select class="custom-select" name="rank" >
                 <option value="" selected disabled>Please select</option>
-                <option value="Police Constable">Police Constable</option>
-                <option value="Senior Police Constable">Senior Police Constable</option>
-                <option value="Police Head Constable">Police Head Constable</option>
+                <option value="Constable">Constable</option>
+                <option value="Senior Constable">Senior Constable</option>
+                <option value="Head Constable">Head Constable</option>
                 <option value="Assistant Sub-Inspector of Police">Assistant Sub-Inspector of Police</option>
                 <option value="Sub-Inspector of Police">Sub-Inspector of Police</option>
                 <option value="Inspector of Police">Inspector of Police</option>
                 <option value="Assistant Commissioner of Police">Assistant Commissioner of Police</option>
-                <option value="YAdditional Deputy Commissioner of Police">Additional Deputy Commissioner of Police</option>
+                <option value="Additional Deputy Commissioner of Police">Additional Deputy Commissioner of Police</option>
                 <option value="Deputy Commissioner of Police">Deputy Commissioner of Police</option>
             </select>
          </div>
@@ -128,10 +128,10 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <span class="input-group-addon" id="basic-addon3">Disease of the patient:</span>
             <input type="text" class="form-control" id="basic-url" name="disease"  >
          </div>
-         <div class="input-group">
+         <!--<div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Date of application:</span>
             <input type="date" class="form-control" id="basic-url" name="applicationDate"  >
-         </div>
+         </div>-->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Amount requested in claim:</span>
             <input type="number" class="form-control" id="basic-url" name="amtAsked" placeholder="Amount Asked" >

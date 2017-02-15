@@ -40,8 +40,8 @@ if($_SESSION["sess_userrole"]!="dealing"){
         <li><a href="emgChecklist.php">OP-Emergency</a></li>
        <li><a href="ip_refChecklist.php">IP-Referral</a></li>
         <li class="active"><a href="#">Emergency Credit<span class="sr-only">(current)</span></a></li>
-          <li><a href="creditCheck.php">Credit</a></li>
-          <li><a href="permissionCheck.php">Permission</a></li>
+          <li><a href="creditCheck.php">P. Credit</a></li>
+          <li><a href="permissionCheck.php">P. Treatment</a></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
@@ -72,14 +72,14 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <span class="input-group-addon" id="basic-addon3">Enter rank:</span>
             <select class="custom-select" name="rank" required >
                 <option value="" selected disabled>Please select</option>
-                <option value="Police Constable">Police Constable</option>
-                <option value="Senior Police Constable">Senior Police Constable</option>
-                <option value="Police Head Constable">Police Head Constable</option>
+                <option value="Constable">Constable</option>
+                <option value="Senior Constable">Senior Constable</option>
+                <option value="Head Constable">Head Constable</option>
                 <option value="Assistant Sub-Inspector of Police">Assistant Sub-Inspector of Police</option>
                 <option value="Sub-Inspector of Police">Sub-Inspector of Police</option>
                 <option value="Inspector of Police">Inspector of Police</option>
                 <option value="Assistant Commissioner of Police">Assistant Commissioner of Police</option>
-                <option value="YAdditional Deputy Commissioner of Police">Additional Deputy Commissioner of Police</option>
+                <option value="Additional Deputy Commissioner of Police">Additional Deputy Commissioner of Police</option>
                 <option value="Deputy Commissioner of Police">Deputy Commissioner of Police</option>
             </select>
          </div>
@@ -178,10 +178,10 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <span class="input-group-addon" id="basic-addon3">Enter the disease of the patient:</span>
             <input type="text" class="form-control" id="basic-url" name="disease" placeholder="Disease" required >
          </div>
-         <div class="input-group">
+         <!--<div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Enter the date of application:</span>
             <input type="date" class="form-control" id="basic-url" name="applicationDate" required >
-         </div>
+         </div>-->
          <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Enter the amount requested in claim:</span>
             <input type="number" class="form-control" id="basic-url" name="amtAsked" placeholder="Amount Asked" required >

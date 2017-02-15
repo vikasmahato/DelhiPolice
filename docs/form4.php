@@ -31,7 +31,7 @@ table {
   <body>
       <div class='container'>
        <h3>CALCULATION SHEET</h3>
-          <p>Details of expenditures incurred on the treatment of $value[applicant_name] $string Belt No. $value[police_station_no] at $value[hospital_name] (Name of the Hospital) where he/she remained admitted/under treatment from $value[startdate] to $value[enddate].
+          <p style='text-align:justify;'>Details of expenditures incurred on the treatment of $value[applicant_name] $string Belt No. $value[police_station_no] at $value[hospital_name] (Name of the Hospital) where he/she remained admitted/under treatment from $value[startdate] to $value[enddate].
           </p>
        <table class='table'>
       <tbody>
@@ -46,7 +46,7 @@ table {
      $data
     </tbody>
   </table>
-<p style='text-indent:12%;'>It is certified that the bills have been checked in totality and rates claimed by the treating hospitals are Matched/restricted to CGHS approved rates. The claim for the tests/pathology is cross referenced for checking the rates with the tests actually conducted.</p>
+<p style='text-indent:12%;text-align:justify;'>It is certified that the bills have been checked in totality and rates claimed by the treating hospitals are Matched/restricted to CGHS approved rates. The claim for the tests/pathology is cross referenced for checking the rates with the tests actually conducted.</p>
 <div style='margin-top:20px;'>Signature of Dealing Assistant</div>
 <div style='margin-top:20px;'>Signature of Head Assistant</div>
 <div style='margin-top:20px;'>Signature of Inspector Administration</div>

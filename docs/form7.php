@@ -33,7 +33,7 @@ text-align:center;
         <div style='margin-bottom:10px;margin-left:92px;'>General Administration/PHQ, Delhi</div>
           <div>Subject:- &nbsp;&nbsp;Regarding medical re-imbursement claim in respect of $value[applicant_name] No. $value[police_station_no].</div>
         <div style='margin-top:10px;'>Memo</div>
-          <p style='text-indent:12%'>
+          <p style='text-indent:12%;text-align:justify;'>
               Enclosed please find herewith a medical re-imbursement claim along with all the original papers in respect of $value[applicant_name] No. $value[police_station_no] vide which she/he has intimated that the condition of his/her $value[relation] has suddenly become deteriorated and she/he was admitted in private hospital in emergency.  As per the M.A. Rules, calculation sheet has been prepared which is enclosed herewith.</p>
       <table class='table'>
     <tbody>
@@ -55,7 +55,7 @@ text-align:center;
       </tr>
     </tbody>
   </table>
-    <p style='text-indent:12%;'>
+    <p style='text-indent:12%;text-align:justify;'>
         It is therefore, requested that his/her medical re-imbursement claim may be considered sympathetically and necessary ex-post facto permission/ sanction of the competent authority may kindly be obtained and conveyed to this office at an early date. Funds are available under head '01.01.06 Medical Treament' during the current financial year 2017-2018. </p>
 <div style='text-align:right;font-weight:bold;margin-top:50px;'>ACP/HQ</div>
 <div class='row'>

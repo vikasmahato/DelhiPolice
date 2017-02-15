@@ -15,8 +15,8 @@ $form16 = "<html lang='en'>
           <h4 style='text-align:center;'><b><u>OFFICE OF THE DEPUTY COMMISIONER OF POLICE, SOUTH EAST DISTRICT,</u></b></h4>
           <h4 style='text-align:center;'> <b><u>IST FLOOR, POLICE STATION SARITA VIHAR, NEW DELHI-110076.</u></b></h4>
           <div>Subject:- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Regarding medical re-imbursement claim submitted by $value[applicant_name] No. $value[police_station_no]</div>
-          <p style='text-indent:12%;'>Please refer to your office/police station number $value[police_station_no] dated $value[application_date], on the subject cited above.</p>
-          <p style='text-indent:12%;'>On scrutiny of the medical claim submitted by $value[applicant_name] No. $value[police_station_no], it has been found that the following information/documents as mentioned at SI No. ______________ are required to be send to General Branch/SE District so that the medical claim could be prepared for sanction:-</p>
+          <p style='text-indent:12%;text-align:justify;'>Please refer to your office/police station number $value[police_station_no] dated $value[application_date], on the subject cited above.</p>
+          <p style='text-indent:12%;text-align:justify;'>On scrutiny of the medical claim submitted by $value[applicant_name] No. $value[police_station_no], it has been found that the following information/documents as mentioned at SI No. ______________ are required to be send to General Branch/SE District so that the medical claim could be prepared for sanction:-</p>
           <div style='margin-top:20px;'>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An application for reimbursement of medical claim.</div>
           <div>2. &nbsp;&nbsp;&nbsp;&nbsp;Form 2004 should be filled-up properly and completely.</div>
           <div>3.&nbsp;&nbsp;&nbsp;&nbsp; Copies of Identity Card (Delhi Police) and CGHS Cards of the employee & patient (if applicable) duly verified/attested by the ACP concerned, as desired by ACP/HQ-SE.</div>

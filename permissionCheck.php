@@ -40,8 +40,8 @@ if($_SESSION["sess_userrole"]!="dealing"){
         <li><a href="emgChecklist.php">OP-Emergency</a></li>
         <li><a href="ip_refChecklist.php">IP-Referral</a></li>
         <li><a href="ip_emgChecklist.php">Emergency Credit</a></li>
-          <li><a href="creditCheck.php">Credit</a></li>
-          <li class="active"><a href="#">Permission<span class="sr-only">(current)</span></a></li>
+          <li><a href="creditCheck.php">P. Credit</a></li>
+          <li class="active"><a href="#">P. Treatment<span class="sr-only">(current)</span></a></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
@@ -60,14 +60,14 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <span class="input-group-addon" id="basic-addon3">Enter rank:</span>
             <select class="custom-select" name="rank" required >
                 <option value="" selected disabled>Please select</option>
-                <option value="Police Constable">Police Constable</option>
-                <option value="Senior Police Constable">Senior Police Constable</option>
-                <option value="Police Head Constable">Police Head Constable</option>
+                <option value="Constable">Constable</option>
+                <option value="Senior Constable">Senior Constable</option>
+                <option value="Head Constable">Head Constable</option>
                 <option value="Assistant Sub-Inspector of Police">Assistant Sub-Inspector of Police</option>
                 <option value="Sub-Inspector of Police">Sub-Inspector of Police</option>
                 <option value="Inspector of Police">Inspector of Police</option>
                 <option value="Assistant Commissioner of Police">Assistant Commissioner of Police</option>
-                <option value="YAdditional Deputy Commissioner of Police">Additional Deputy Commissioner of Police</option>
+                <option value="Additional Deputy Commissioner of Police">Additional Deputy Commissioner of Police</option>
                 <option value="Deputy Commissioner of Police">Deputy Commissioner of Police</option>
             </select>
          </div>
@@ -84,7 +84,7 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <input type="text" class="form-control" id="basic-url" name="pis" placeholder="PIS No" required >
          </div>
          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon3">Claim for Self or Relative:</span>
+            <span class="input-group-addon" id="basic-addon3">Treatment of Self or Relative:</span>
             <div id="radioOptions">
               <div class="form-check">
                 <label class="form-check-label">
@@ -111,22 +111,32 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <input type="date" class="form-control" id="periodDate" name="endDate" required >
          </div>-->
          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon3">Enter the Start Date:</span>
+            <span class="input-group-addon" id="basic-addon3">Enter the Referral Date:</span>
             <input type="date" class="form-control" id="basic-url" name="startDate" required >
          </div>
         <input type="hidden" name="endDate" >
          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon3">Enter the Hospital Name:</span>
+            <span class="input-group-addon" id="basic-addon3">Under Treatment at:</span>
             <input type="text" class="form-control" id="basic-url" name="hospitalName" placeholder="Hospital Name" required >
          </div>
+        
         <div class="input-group">
-            <span class="input-group-addon" id="basic-addon3">Enter Diary No:</span>
+            <span class="input-group-addon" id="basic-addon3">Want Treatment at:</span>
+            <input type="text" class="form-control" id="refHospitalname" name="refHospitalname" placeholder="Referred Hospital Name" required >
+         </div>
+                 <div class="input-group">
+            <span class="input-group-addon" id="basic-addon3">Enter the Hospital Address:</span>
+            <input type="text" class="form-control" id="basic-url" name="hospitalAddress" placeholder="Address" required >
+         </div>
+                 
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon3">Enter Application Submission date:</span>
             <input type="text" class="form-control" id="diary" name="diaryNo" placeholder="Diary No" required >
             <span class="input-group-addon" id="dated">/Genl. Branch/SED dated</span>
             <input type="date" class="form-control" id="diary" name="diaryDate" required >
          </div>
          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon3">Enter the CGHS No of Applicant:</span>
+            <span class="input-group-addon" id="basic-addon3">Enter the CGHS card/ID No. of Applicant:</span>
             <input type="number" class="form-control" id="basic-url" name="appCGHSno" placeholder="Applicant CGHS Number" required >
          </div>
          <div class="input-group">
@@ -167,14 +177,12 @@ if($_SESSION["sess_userrole"]!="dealing"){
                 <option value="Semi-Private">Semi-Private</option>
             </select>
          </div>
-         <div class="input-group">
+         <!--<div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Enter the date of application:</span>
             <input type="date" class="form-control" id="basic-url" name="applicationDate" required >
-         </div>
+         </div>-->
        <input type="hidden" name="disease" value="NULL">
-        <input type="hidden" name="refHospitalname" value="NULL">
         <input type="hidden" name="pincode" value=0>
-        <input type="hidden" name="hospitalAddress" value="NULL">
         <input type="hidden" name="amtAsked" value=0>
          </div>
                

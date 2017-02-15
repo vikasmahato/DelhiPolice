@@ -82,7 +82,7 @@ function getbuttons($case, $amount){
         break;
     case "CREDIT":
         echo "<div class='col-md-3'><button type='submit' class='btn btn-info' name='form10_btn'>Notesheet</button></div>
-        <div class='col-md-3'><button type='submit' class='btn btn-info'name='form1_btn'>Permission</button></div>";
+        <div class='col-md-3'><button type='submit' class='btn btn-info'name='form22_btn'>Permission</button></div>";
         break;
     case "OP_REFERRAL":
         echo "<div class='col-md-3'><button type='submit' class='btn btn-info' name='form2_btn'>Permission</button></div>

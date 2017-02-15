@@ -15,7 +15,7 @@ function validateForm(){
 
 {
 
-    formObject.elements["relation"].value = 'SELF';
+    formObject.elements["relation"].value = 'own';
 
     formObject.elements["refCGHSno"].value = 0;
 
@@ -28,11 +28,12 @@ function validateForm(){
 
     var refexpdt = document.forms["myForm"]["refCGHSexp"].value;
     
-    if(edDate=="" && claim=="permit")
+    if(edDate=="" && (claim=="permit" || claim=="credit"))
         {
              formObject.elements["endDate"].value = '2099-01-01';
+            edDate = document.forms["myForm"]["endDate"].value;
         }
-    if(stDate > edDate && claim!="permit")
+    if(stDate > edDate && (claim!="permit" || claim!="credit"))
 
   { 	alert("Invalid period of treatment");
 	return false; 	}
@@ -46,7 +47,7 @@ function validateForm(){
 
   {     alert("CGHS Card of Dependent has expired");
 	return false;		}
-    
+   
     switch(claim)
 {
 	case "opref" : refProcess();
