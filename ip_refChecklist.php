@@ -148,6 +148,23 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <span class="input-group-addon" id="basic-addon3">Enter the expiry date of CGHS card of Dependent:</span>
             <input type="date" class="form-control" id="basic-url" name="refCGHSexp" >
          </div>
+         <div class="input-group" id="dependent4">
+            <span class="input-group-addon" id="basic-addon3">Dependent Certificate:</span>
+            <div id="radioOptions">
+              <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="dependentCertificate">
+                    Attached
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="dependentCertificate">
+                    Not Required
+                </label>
+              </div>
+           </div>
+         </div>
          <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Enter the category of CGHS Applicant:</span>
             <select class="custom-select" name="appCGHScategory" required >

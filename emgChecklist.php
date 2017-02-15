@@ -145,6 +145,23 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <span class="input-group-addon" id="basic-addon3">Enter the expiry date of CGHS card of Dependent:</span>
             <input type="date" class="form-control" id="basic-url" name="refCGHSexp" >
          </div>
+         <div class="input-group" id="dependent4">
+            <span class="input-group-addon" id="basic-addon3">Dependent Certificate:</span>
+            <div id="radioOptions">
+              <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="dependentCertificate">
+                    Attached
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="dependentCertificate">
+                    Not Required
+                </label>
+              </div>
+           </div>
+         </div>
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Enter the category of CGHS Applicant:</span>
             <select class="custom-select" name="appCGHScategory" required >
@@ -168,24 +185,24 @@ if($_SESSION["sess_userrole"]!="dealing"){
          </div>
         <input type="hidden" name="refHospitalname">
          </div>
-            <h3>Checklist of documents required</h3>
+<!--            <h3>Checklist of documents required</h3>
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true"> <b>ID Card</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
+    </div>
+  </div>
     
   <div class="col-lg-6">
     <div class="input-group">
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox"> <b>CGHS Card</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    </div>
+  </div>
+</div>
                
 <div class="row">
   <div class="col-lg-6">
@@ -193,17 +210,17 @@ if($_SESSION["sess_userrole"]!="dealing"){
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" name="dependentCertificate" > <b>Dependent Certificate</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
+    </div>
+  </div>
     
   <div class="col-lg-6">
     <div class="input-group">
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true"> <b>Prescription Slip</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    </div>
+  </div>
+</div>
                
 <div class="row">
   <div class="col-lg-6">
@@ -211,17 +228,17 @@ if($_SESSION["sess_userrole"]!="dealing"){
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" > <b>Original Bill</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
+    </div>
+  </div>
     
   <div class="col-lg-6">
     <div class="input-group">
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" > <b>Medical Bill</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    </div>
+  </div>
+</div>
                
 <div class="row">
   <div class="col-lg-6">
@@ -229,17 +246,17 @@ if($_SESSION["sess_userrole"]!="dealing"){
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" > <b>Main Bill Break-up</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
+    </div>
+  </div>
     
   <div class="col-lg-6">
     <div class="input-group">
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" > <b>Discharge Summary</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    </div>
+  </div>
+</div>
                
 <div class="row">
   <div class="col-lg-6">
@@ -247,17 +264,17 @@ if($_SESSION["sess_userrole"]!="dealing"){
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" > <b>Lab Report</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
+    </div>
+  </div>
     
   <div class="col-lg-6">
     <div class="input-group">
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" > <b>Duplicate Medical</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    </div>
+  </div>
+</div>
                
 <div class="row">
   <div class="col-lg-6">
@@ -265,17 +282,17 @@ if($_SESSION["sess_userrole"]!="dealing"){
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" name="reason" > <b>Reason for Late Submission</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
+    </div>
+  </div>
     
   <div class="col-lg-6">
     <div class="input-group">
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" name="deathCertificate" > <b>Death Certificate</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    </div>
+  </div>
+</div>
                
 <div class="row">
   <div class="col-lg-6">
@@ -283,17 +300,17 @@ if($_SESSION["sess_userrole"]!="dealing"){
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" > <b>Photocopy of Medical</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
+    </div>
+  </div>
     
   <div class="col-lg-6">
     <div class="input-group">
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" > <b>MRC Form</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    </div>
+  </div>
+</div>
                
 <div class="row">
   <div class="col-lg-6">
@@ -301,17 +318,17 @@ if($_SESSION["sess_userrole"]!="dealing"){
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" > <b>Emergency Certificate</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
+    </div>
+  </div>
     
   <div class="col-lg-6">
     <div class="input-group">
       <span id="pgspan" class="input-group-addon">
         <input type="checkbox" required="true" > <b>Reason for Non-govt. Hospital</b>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    </div>
+  </div>
+</div>-->
 <input type="hidden" name="ctype" value="opemg">
             <div class="bt"><input onClick="return validateForm()" type="button" class="btn btn-info" value="SUBMIT" />
       

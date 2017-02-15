@@ -48,7 +48,7 @@
         border: 1px solid #ccc;
         width:400px;
     }
-#dependent1,#dependent2,#dependent3{
+#dependent1,#dependent2,#dependent3,#dependent4{
         display: none;
     }
 #periodDate{
