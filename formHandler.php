@@ -74,9 +74,9 @@ if($disease = "")
     }
     
 
-$sql = "INSERT INTO form (applicant_name, pis, rank, relation, pincode, startdate, enddate, hospital_name, hospital_address, police_station_no, diary_no, ref_hospital_name, a_cghs_no, a_cghs_exp, r_cghs_no, r_cghs_exp, a_cghs_category, disease, diary_date, amt_asked, period, claim_type, amt_granted, amt_due ) 
+$sql = "INSERT INTO form (application_date, applicant_name, pis, rank, relation, pincode, startdate, enddate, hospital_name, hospital_address, police_station_no, diary_no, ref_hospital_name, a_cghs_no, a_cghs_exp, r_cghs_no, r_cghs_exp, a_cghs_category, disease, diary_date, amt_asked, period, claim_type, amt_granted, amt_due ) 
 
-VALUES ('$appName', '$pis', '$rank', '$relation', $pincode, '$startDate', '$endDate', '$hospitalName', '$hospitalAddress', '$policestationNo', '$diaryNo','$refHospitalname',$appCGHSno,'$appCGHSexp',$refCGHSno,'$refCGHSexp','$appCGHScategory','$disease', '$diaryDate',$amtAsked, '$period->days','$claim_type',$amtGranted,$amtDue )";
+VALUES (CURDATE(), '$appName', '$pis', '$rank', '$relation', $pincode, '$startDate', '$endDate', '$hospitalName', '$hospitalAddress', '$policestationNo', '$diaryNo','$refHospitalname',$appCGHSno,'$appCGHSexp',$refCGHSno,'$refCGHSexp','$appCGHScategory','$disease', '$diaryDate',$amtAsked, '$period->days','$claim_type',$amtGranted,$amtDue )";
     
     $dbh->exec($sql);
     

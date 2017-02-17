@@ -2,7 +2,10 @@
 $string ="";
 if($value[r_cghs_no]!=0)
 {
-    $string="(Name of the patient) W/O, S/O, D/O, F/O, M/O $value[relation] (Name of the police officer/men) ";
+    $string="______________ (Name of the patient) W/O, S/O, D/O, F/O, M/O $value[applicant_name] (Name of the police officer/men) ";
+}
+else {
+	$string="$value[applicant_name]";
 }
 $form4 ="<html>
   <head>
@@ -31,7 +34,7 @@ table {
   <body>
       <div class='container'>
        <h3>CALCULATION SHEET</h3>
-          <p style='text-align:justify;'>Details of expenditures incurred on the treatment of $value[applicant_name] $string Belt No. $value[police_station_no] at $value[hospital_name] (Name of the Hospital) where he/she remained admitted/under treatment from $value[startdate] to $value[enddate].
+          <p style='text-align:justify;'>Details of expenditures incurred on the treatment of $string Belt No. $value[police_station_no] at $value[hospital_name] (Name of the Hospital) where he/she remained admitted/under treatment from $value[startdate] to $value[enddate].
           </p>
        <table class='table'>
       <tbody>

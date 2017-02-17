@@ -41,16 +41,16 @@ $form2 ="<html lang='en'>
           <p style='text-indent:17%;text-align:justify;'>
           Submitted for kind perusal and para 3N above may kindly be approved please.
           </p>
-        <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-top:35px;'>HAG</div>
-        <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-top:15px'>INSPR/ADMIN</div>
-        <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-top:15px'>ACP/HQ</div>
-        <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-bottom:20px;margin-top:15px'>ADDL.DCP/SED</div>
+        <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-top:15px;'>HAG</div>
+        <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-top:5px'>INSPR/ADMIN</div>
+        <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-top:5px'>ACP/HQ</div>
+        <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-bottom:15px;margin-top:5px'>ADDL.DCP/SED</div>
         <p style='text-indent:12%;text-align:justify;'>
         	Reference paras 1 to 6/N above, Necessary fair draft order is placed below for favour of signature, if approved please.
         </p>
-     <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-top:35px;'>HAG/SE</div>
-        <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-top:15px'>INSPR. ADMIN.</div>
-        <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-bottom:20px;margin-top:15px'>ACP</div>
+     <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-top:15px;'>HAG/SE</div>
+        <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-top:5px'>INSPR. ADMIN.</div>
+        <div style='text-align:left;text-decoration:underline;font-weight:bold;margin-top:5px'>ACP</div>
 </div>
   </body>
 </html>";

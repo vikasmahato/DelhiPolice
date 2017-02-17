@@ -24,12 +24,12 @@ $form13 = "<html lang='en'>
     <script src='js/bootstrap.min.js'></script>
       <div class='container' style='font: 20px, arial, Times New Roman;'>
         <h5 style='text-align:center;'><u>OFFICE OF THE DEPUTY COMMISIONER OF POLICE SOUTH EAST DISTRICT,</u></h5>
-        <h5 style='margin-bottom:30px;text-align:center;'><u> IST FLOOR, POLICE STATION SARITA VIHAR, NEW DELHI-110076.</u></h5>
-        <div style='margin-top:30px;text-align:center;'>No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ Genl. Br. (SED) dated New Delhi, the </div>
-        <div>To</div>
+        <h5 style='text-align:center;'><u> IST FLOOR, POLICE STATION SARITA VIHAR, NEW DELHI-110076.</u></h5>
+        <div style='margin-top:10px;'>No.__________/ Genl. Br. (SED) dated New Delhi, the___________/2017 </div>
+        <div>To,</div>
         <div><div style='margin-left:100px;'>The Medical Superintendent,</div>
-        <div style='margin-left:100px;margin-top:20px;'>$value[ref_hospital_name]</div>
-        <div style='margin-left:100px;margin-top:20px;'>$value[hospital_address]</div>
+        <div style='margin-left:100px;'>$value[ref_hospital_name]</div>
+        <div style='margin-left:100px;'>$value[hospital_address]</div>
         </div>
         <div style='margin-top:20px;'>Subject:- &nbsp;&nbsp;&nbsp;Regarding permission for taking treatment in respect of
         <div style='margin-left:100px;margin-top:20px;'>$string1 $value[applicant_name]</div>
