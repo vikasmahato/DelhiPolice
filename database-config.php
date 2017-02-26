@@ -3,7 +3,7 @@
    $database = 'jasola';
    $host = 'localhost';
    $user = 'root';
-   $pass = 'ghHYGb46889.gh';
+   $pass = '123456';
 
    // try to conncet to database
    $dbh = new PDO("mysql:dbname={$database};host={$host}", $user, $pass);

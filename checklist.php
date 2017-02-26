@@ -77,16 +77,22 @@ if($_SESSION["sess_userrole"]!="dealing"){
 					<thead>
 						<tr>
 							<th width="2%"><input id="check_all" class="formcontrol" type="checkbox"/></th>
-							<th width="15%">S No</th>
-							<th width="68%">Treatment For</th>
-							<th width="15%">Total</th>
+							<th width="5%">S No</th>
+                            <th width="15%">Bill No, Hosp Name</th>
+                            <th width="10%">Date</th>
+							<th width="48%">Name of tests</th>
+                            <th width="10%">Amount Claimed</th>
+							<th width="10%">Total</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td><input class="case" type="checkbox"/></td>
 							<td><input type="text" data-type="productCode" name="itemNo[]" id="itemNo_1" class="form-control autocomplete_txt" autocomplete="off"></td>
+                            <td><input type="text" data-type="hospName" name="itemHosp[]" id="itemHosp_1" class="form-control" autocomplete="off"></td>
+                            <td><input type="date" data-type="date" name="itemDate[]" id="itemDate_1" class="form-control" autocomplete="off"></td>
 							<td><input type="text" data-type="productName" name="itemName[]" id="itemName_1" class="form-control autocomplete_txt" autocomplete="off"></td>
+                            <td><input type="number" name="total_asked[]" id="total_asked_1" class="form-control totalAskedPrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>
 							<td><input type="number" name="total[]" id="total_1" class="form-control totalLinePrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>
 						</tr>
 					</tbody>

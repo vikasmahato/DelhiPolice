@@ -5,7 +5,10 @@ $subtotal = $_POST['subTotal'];
 
 $itemNo = $_POST['itemNo'];
 $itemName = $_POST['itemName'];
-$total = $_POST['total'];
+$totalGranted = $_POST['total'];
+$itemHosp = $_POST['itemHosp'];
+$itemDate = $_POST['itemDate'];
+$totalAsked = $_POST['total_asked'];
 
 $arrlength = count($itemNo);
 
@@ -35,7 +38,7 @@ $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     for($x = 0; $x < $arrlength; $x++) {
         
-         $sql3 = "INSERT INTO medical (app_id, s_no, treatment, total) VALUES ('$appid','$itemNo[$x]', '$itemName[$x]', '$total[$x]')";
+         $sql3 = "INSERT INTO medical (app_id, s_no, treatment, total, bill_no_hosp, date, amt_asked) VALUES ('$appid','$itemNo[$x]', '$itemName[$x]', '$totalGranted[$x]', '$itemHosp[$x]', '$itemDate[$x]','$totalAsked[$x]')";
         
          $dbh->exec($sql3);
     }

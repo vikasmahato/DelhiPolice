@@ -7,7 +7,12 @@ $(".addmore").on('click',function(){
 	html = '<tr>';
 	html += '<td><input class="case" type="checkbox"/></td>';
 	html += '<td><input type="text" data-type="productCode" name="itemNo[]" id="itemNo_'+i+'" class="form-control autocomplete_txt" autocomplete="off"></td>';
+    html += '<td><input type="text" data-type="hospName" name="itemHosp[]" id="itemHosp_'+i+'" class="form-control autocomplete_txt" autocomplete="off"></td>';
+    html += '<td><input type="date" data-type="date" name="itemDate[]" id="itemDate_'+i+'" class="form-control autocomplete_txt" autocomplete="off"></td>';
 	html += '<td><input type="text" data-type="productName" name="itemName[]" id="itemName_'+i+'" class="form-control autocomplete_txt" autocomplete="off"></td>';
+    
+    html += '<td><input type="text" name="total_asked[]" id="total_asked_'+i+'" class="form-control totalAskedPrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>';
+    
 	html += '<td><input type="text" name="total[]" id="total_'+i+'" class="form-control totalLinePrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>';
 	html += '</tr>';
 	$('table').append(html);
@@ -81,6 +86,12 @@ $(document).on('focus','.autocomplete_txt',function(){
 			calculateTotal();
 		}		      	
 	});
+});
+
+
+//recalcuclte total price on line price change
+$(document).on('change keyup blur','.totalLinePrice',function(){
+	calculateTotal();
 });
 
 //price change
