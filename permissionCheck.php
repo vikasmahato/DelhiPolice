@@ -13,7 +13,7 @@ if($_SESSION["sess_userrole"]!="dealing"){
     <title>Medical Claim</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<!--<link href="css/style.css" rel="stylesheet">-->
       <link href="css/home.css" rel="stylesheet">
       <script src="js/dependent.js"></script>
       <script src="js/script.js"></script>
@@ -36,10 +36,10 @@ if($_SESSION["sess_userrole"]!="dealing"){
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
          <li><a href="dealinghome2.php">Status</a></li>
-        <li><a href="refChecklist.php">OP-Referral</a></li>
-        <li><a href="emgChecklist.php">OP-Emergency</a></li>
-        <li><a href="ip_refChecklist.php">IP-Referral</a></li>
-        <li><a href="ip_emgChecklist.php">Emergency Credit</a></li>
+        <li><a href="refChecklist.php">Referral/Govt Claim</a></li>
+        <li><a href="emgChecklist.php">Emergency Claim</a></li>
+        <!--<li><a href="ip_refChecklist.php">IP-Referral</a></li>-->
+        <li><a href="ip_emgChecklist.php">Emergency Credit Claim</a></li>
           <li><a href="creditCheck.php">P. Credit</a></li>
           <li class="active"><a href="#">P. Treatment<span class="sr-only">(current)</span></a></li>
       </ul>

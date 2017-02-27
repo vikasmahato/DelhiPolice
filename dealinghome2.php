@@ -52,10 +52,10 @@ if($_SESSION["sess_userrole"]!="dealing"){
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
         <li class="active"><a href="#">Status<span class="sr-only">(current)</span></a></li>
-        <li><a href="refChecklist.php">OP-Referral</a></li>
-        <li><a href="emgChecklist.php">OP-Emergency</a></li>
-        <li><a href="ip_refChecklist.php">IP-Referral</a></li>
-        <li><a href="ip_emgChecklist.php">Emergency Credit</a></li>
+        <li><a href="refChecklist.php">Referreal/Govt Claim</a></li>
+        <li><a href="emgChecklist.php">Emergency Claim</a></li>
+       <!-- <li><a href="ip_refChecklist.php">IP-Referral</a></li>-->
+        <li><a href="ip_emgChecklist.php">Emergency Credit Claim</a></li>
           <li><a href="creditCheck.php">P. Credit</a></li>
           <li><a href="permissionCheck.php">P. Treatment</a></li>
          <!-- <li role="presentation" class="dropdown">
