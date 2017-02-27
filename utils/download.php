@@ -59,7 +59,10 @@ function generate($value, $s){
     
     require '../docs/form12.php';
     require '../docs/form13.php';
-    require '../docs/form22.php';
+	
+require '../docs/form15.php';   
+
+ require '../docs/form22.php';
 ini_set('display_errors', 1);
 
     $dompdf = new DOMPDF();

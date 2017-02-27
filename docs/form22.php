@@ -45,7 +45,7 @@ $form22 = "<html lang='en'>
 		<p style='text-indent:12%;text-align:justify;'>It is stated that _________________________________________<br>is admitted in your Hospital since $value[startdate] in emergency condition due to as mentioned in emergency certificate. He/She is a CGHS beneficiary and having a valid CGHS card ID No. $string2. The applicant has requested for providing credit facility because he is not in a position to bear the expenditure to be incurred on the treatment of the patient. Hence, he/she may be provided credit facility as per CGHS instructions vide MH&FW O.M. No. S.11045/36/2012-CGHS(HEC), dated 01.10.2014 vide para-4 and bill may be prepared according to the CGHS approved rate list and sent to this office immediately (in triplicate) for reimbursement. The Govt. Servant is entitled for $value[a_cghs_category] ward category.</p>
         <div style='text-align:center;margin-top:40px;margin-bottom:40px'>This has the approval of Addl. DCP/SE district</div>
       <div style='text-align:right;margin-bottom:65px'>Yours faithfully,</div>
-      <div style='text-align:right'>ASST. COMMISSIONER OF POLICE (HQ),</div>
+      <div style='text-align:right'>ASSTT. COMMISSIONER OF POLICE (HQ),</div>
       <div style='text-align:right'>SOUTH EAST DISTRICT, NEW DELHI.</div>
       </div>
   </body>

@@ -56,18 +56,34 @@ if($_SESSION["sess_userrole"]!="dealing"){
     <!-- Begin page content -->
     <div class="container content">
         <form id="CalculationSheet" action="calcSheet.php" method="post">
-      	<div class='row'>
-      		<div class='col-xs-12 col-sm-4 col-md-4 col-lg-4'>
-                
-      		</div>
-      		<div class='col-xs-12 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-sm-4 col-md-4 col-lg-4'>
-				<div class="form-group">
-				
-  <input type="radio" name="h_type" id="nabh_nabl" value="nabh_nabl"> NABH<br>
-  <input type="radio" name="h_type" id="non_nabh_nabl" value="non_nabh_nabl"> NON NABH<br>
-
-				</div>
-      		</div>
+      	<div>
+      		 <div class="input-group">
+            <span class="input-group-addon" id="basic-addon3">Enter the category of CGHS Applicant:</span>
+            <select class="custom-select" name="appCGHScategory" id="appCGHScategory" required >
+                <option value="" selected disabled>Please select</option>
+                <option value="General">General</option>
+                <option value="Private">Private</option>
+                <option value="Semi-Private">Semi-Private</option>
+            </select>
+         </div>
+             <div class="input-group">
+            <span class="input-group-addon" id="basic-addon3">Hospital Type:</span>
+            <div id="radioOptions">
+              <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="h_type" id="nabh_nabl" value="nabh_nabl">
+                    NABH
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="h_type" id="non_nabh_nabl" value="non_nabh_nabl">
+                    NON NABH
+                </label>
+              </div>
+           </div>
+         </div>
+      		
       	</div>
       	<h2>&nbsp;</h2>
         
@@ -77,16 +93,22 @@ if($_SESSION["sess_userrole"]!="dealing"){
 					<thead>
 						<tr>
 							<th width="2%"><input id="check_all" class="formcontrol" type="checkbox"/></th>
-							<th width="15%">S No</th>
-							<th width="68%">Treatment For</th>
-							<th width="15%">Total</th>
+							<th width="5%">S No</th>
+                            <th width="15%">Bill No, Hosp Name</th>
+                            <th width="10%">Date</th>
+							<th width="48%">Name of tests</th>
+                            <th width="10%">Amount Claimed</th>
+							<th width="10%">Total</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td><input class="case" type="checkbox"/></td>
 							<td><input type="text" data-type="productCode" name="itemNo[]" id="itemNo_1" class="form-control autocomplete_txt" autocomplete="off"></td>
+                            <td><input type="text" data-type="hospName" name="itemHosp[]" id="itemHosp_1" class="form-control" autocomplete="off"></td>
+                            <td><input type="date" data-type="date" name="itemDate[]" id="itemDate_1" class="form-control" autocomplete="off"></td>
 							<td><input type="text" data-type="productName" name="itemName[]" id="itemName_1" class="form-control autocomplete_txt" autocomplete="off"></td>
+                            <td><input type="number" name="total_asked[]" id="total_asked_1" class="form-control totalAskedPrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>
 							<td><input type="number" name="total[]" id="total_1" class="form-control totalLinePrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>
 						</tr>
 					</tbody>
@@ -99,12 +121,18 @@ if($_SESSION["sess_userrole"]!="dealing"){
       			<button class="btn btn-success addmore" type="button">+ Add More</button>
       		</div>
       		<div class='col-xs-12 col-sm-offset-4 col-md-offset-4 col-lg-offset-4 col-sm-5 col-md-5 col-lg-5'>
-				
+				<div class="form-group">
+						<label>Amount asked: &nbsp;</label>
+						<div class="input-group">
+							<div class="input-group-addon">₹</div>
+							<input type="number" class="form-control" name="askedTotal" id = "askedTotal" placeholder="Amount asked" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;">
+						</div>
+					</div>
 					<div class="form-group">
 						<label>Total: &nbsp;</label>
 						<div class="input-group">
 							<div class="input-group-addon">₹</div>
-							<input type="number" class="form-control" name="subTotal" id = "subTotal" placeholder="Subtotal" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;">
+							<input type="number" class="form-control" name="subTotal" id = "subTotal" placeholder="Total" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;">
 						</div>
 					</div>
                 <div class="bt"><button type="submit" class="btn btn-info" >SUBMIT</button>
@@ -122,6 +150,7 @@ if($_SESSION["sess_userrole"]!="dealing"){
     <script src="js/script.js"></script>
   </body>
 </html>
+
 
 
 

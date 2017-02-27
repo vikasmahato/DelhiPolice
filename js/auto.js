@@ -7,7 +7,12 @@ $(".addmore").on('click',function(){
 	html = '<tr>';
 	html += '<td><input class="case" type="checkbox"/></td>';
 	html += '<td><input type="text" data-type="productCode" name="itemNo[]" id="itemNo_'+i+'" class="form-control autocomplete_txt" autocomplete="off"></td>';
+    html += '<td><input type="text" data-type="hospName" name="itemHosp[]" id="itemHosp_'+i+'" class="form-control autocomplete_txt" autocomplete="off"></td>';
+    html += '<td><input type="date" data-type="date" name="itemDate[]" id="itemDate_'+i+'" class="form-control autocomplete_txt" autocomplete="off"></td>';
 	html += '<td><input type="text" data-type="productName" name="itemName[]" id="itemName_'+i+'" class="form-control autocomplete_txt" autocomplete="off"></td>';
+    
+    html += '<td><input type="number" name="total_asked[]" id="total_asked_'+i+'" class="form-control totalAskedPrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>';
+    
 	html += '<td><input type="text" name="total[]" id="total_'+i+'" class="form-control totalLinePrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>';
 	html += '</tr>';
 	$('table').append(html);
@@ -45,6 +50,9 @@ $(document).on('focus','.autocomplete_txt',function(){
         alert("Please select Hospital Type");
     }
     
+    var e = document.getElementById("appCGHScategory");
+var category = e.options[e.selectedIndex].value;
+    
 	
 	$(this).autocomplete({
 		source: function( request, response ) {
@@ -55,7 +63,8 @@ $(document).on('focus','.autocomplete_txt',function(){
 				data: {
 				   name_startsWith: request.term,
 				   type: type,
-                   h_type: h_type
+                   h_type: h_type,
+                    category: category
 				},
 				 success: function( data ) {
 					 response( $.map( data, function( item ) {
@@ -83,6 +92,18 @@ $(document).on('focus','.autocomplete_txt',function(){
 	});
 });
 
+
+//recalcuclte total price on line price change
+$(document).on('change keyup blur','.totalLinePrice',function(){
+	calculateTotal();
+});
+
+
+$(document).on('change keyup blur','.totalAskedPrice',function(){
+	calculateTotalAsked();
+});
+
+
 //price change
 $(document).on('change keyup blur','.changesNo',function(){
 	id_arr = $(this).attr('id');
@@ -106,6 +127,14 @@ function calculateTotal(){
 	$('#subTotal').val( subTotal.toFixed(2) );
 }
 
+//total price calculation 
+function calculateTotalAsked(){
+	subTotal = 0 ; total = 0; 
+	$('.totalAskedPrice').each(function(){
+		if($(this).val() != '' )subTotal += parseFloat( $(this).val() );
+	});
+	$('#askedTotal').val( subTotal.toFixed(2) );
+}
 
 
 //It restrict the non-numbers
@@ -122,3 +151,4 @@ function IsNumeric(e) {
 $(function () {
     $('#invoiceDate').datepicker({});
 });
+

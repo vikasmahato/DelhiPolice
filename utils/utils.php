@@ -56,11 +56,11 @@ function get_data_for_calcSheet($id){
     foreach ($dbh->query($sql) as $row) {
     $si++;
     $string.="<tr>
-    <td>$si</td>
-    <td></td>
-    <td></td>
+     <td>$si</td>
+    <td>$row[bill_no_hosp]</td>
+    <td>$row[date]</td>
     <td>$row[treatment]</td>
-    <td></td>
+    <td>$row[amt_asked]</td>
     <td>$row[total]</td>
     </tr>";
     }
