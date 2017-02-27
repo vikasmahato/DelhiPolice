@@ -9,7 +9,7 @@ $totalGranted = $_POST['total'];
 $itemHosp = $_POST['itemHosp'];
 $itemDate = $_POST['itemDate'];
 $totalAsked = $_POST['total_asked'];
-
+$sumTotalAsked = $_POST['askedTotal'];
 $arrlength = count($itemNo);
 
 
@@ -30,9 +30,9 @@ $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     if($subtotal > 200000)
     
-        $sql = "UPDATE form SET amt_granted = '$subtotal', status = 'PHQ' WHERE app_id = '$appid' ";
+        $sql = "UPDATE form SET amt_granted = '$subtotal',amt_asked = '$sumTotalAsked',  status = 'PHQ' WHERE app_id = '$appid' ";
     else
-        $sql = "UPDATE form SET amt_granted = '$subtotal', status = 'HAG' WHERE app_id = '$appid' ";
+        $sql = "UPDATE form SET amt_granted = '$subtotal',amt_asked = '$sumTotalAsked',  status = 'HAG' WHERE app_id = '$appid' ";
     
     $dbh->exec($sql);
     

@@ -182,11 +182,12 @@ if($_SESSION["sess_userrole"]!="dealing"){
         <!-- <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Enter the date of application:</span>
             <input type="date" class="form-control" id="basic-url" name="applicationDate" required >
-         </div>-->
+         </div>
          <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Enter the amount requested in claim:</span>
             <input type="number" class="form-control" id="basic-url" name="amtAsked" placeholder="Amount Asked" required >
-         </div>
+         </div>-->
+<input type="hidden" name="amtAsked" value="0">
          </div>
                
         <!--<h3>Checklist of documents required</h3>
