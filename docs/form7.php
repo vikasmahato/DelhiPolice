@@ -1,5 +1,15 @@
 <?php
-
+$patient_name ="";
+$rel_string="";
+if($value[r_cghs_no]!=0)
+{
+    $patient_name="____________________________";
+    $rel_string="$value[relation]";
+    
+}
+else {
+    $patient_name="$value[applicant_name]";
+}
 $form7 = "<html lang='en'>
   <head>
     <meta charset='utf-8'>
@@ -31,10 +41,11 @@ text-align:center;
         <div>To</div>
         <div style='margin-top:15px;margin-left:92px;'>The Deputy Commissioner of Police</div>
         <div style='margin-bottom:10px;margin-left:92px;'>General Administration/PHQ, Delhi</div>
-          <div>Subject:- &nbsp;&nbsp;Regarding medical re-imbursement claim in respect of $value[applicant_name] No. $value[police_station_no].</div>
+          <div>Subject:- <br>
+          <p style='margin-left:100px;padding-top=0px;margin-top=0px;'>Regarding medical re-imbursement claim in respect of <b> $value[applicant_name] No. $value[police_station_no].</b></p></div>
         <div style='margin-top:10px;'>Memo</div>
           <p style='text-indent:12%;text-align:justify;'>
-              Enclosed please find herewith a medical re-imbursement claim along with all the original papers in respect of $value[applicant_name] No. $value[police_station_no] vide which she/he has intimated that the condition of his/her $value[relation] has suddenly become deteriorated and she/he was admitted in private hospital in emergency.  As per the M.A. Rules, calculation sheet has been prepared which is enclosed herewith.</p>
+              Enclosed please find herewith a medical re-imbursement claim along with all the original papers in respect of <b>$value[applicant_name] No. $value[police_station_no]</b> vide which she/he has intimated that the condition of his/her<b> $value[relation] </b>has suddenly become deteriorated and she/he was admitted in private hospital in emergency.  As per the M.A. Rules, calculation sheet has been prepared which is enclosed herewith.</p>
       <table class='table'>
     <tbody>
       <tr>
@@ -46,7 +57,7 @@ text-align:center;
         <td>Amount admissible</td>
       </tr>
       <tr>
-        <td>$value[rank]<br>$value[applicant_name]<br>$value[police_station_no]</td>
+         <td>$value[rank]<br>$value[applicant_name]<br>No. $value[police_station_no]<br>$rel_string</td>
         <td>$value[hospital_name]</td>
         <td>$value[disease]</td>
         <td>$value[startdate] to $value[enddate]</td>

@@ -1,5 +1,15 @@
 <?php
-
+$patient_name ="";
+$rel_string="";
+if($value[r_cghs_no]!=0)
+{
+    $patient_name="____________________________";
+    $rel_string="$value[relation]";
+    
+}
+else {
+    $patient_name="$value[applicant_name]";
+}
 $form7 = "<html lang='en'>
   <head>
     <meta charset='utf-8'>
@@ -37,7 +47,7 @@ $form7 = "<html lang='en'>
         <td>Amount admissible</td>
       </tr>
       <tr>
-        <td>$value[rank]<br>$value[applicant_name]<br>$value[id_no]</td>
+        <td>$value[rank]<br>$value[applicant_name]<br>No. $value[police_station_no]<br>$rel_string</td>
         <td>$value[hospital_name]</td>
         <td>$value[disease]</td>
         <td>$value[startdate] to $value[enddate]</td>
