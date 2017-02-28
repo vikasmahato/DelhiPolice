@@ -36,7 +36,7 @@ $date1 = new DateTime($startDate);
 $date2 = new DateTime($endDate);
 $period = $date1->diff($date2);
     
-if($disease = "")
+if($disease == "")
 {
     $disease = "NULL";
     $refHospitalname= "NULL";

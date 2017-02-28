@@ -96,10 +96,8 @@ function getbuttons($case, $amount){
         <div class='col-md-3'><button type='submit' class='btn btn-info'name='form9_btn'>Order</button></div>";
         break;
    case "IP_EMERGENCY":	
-	 echo "<div class='col-md-3'><button type='submit' class='btn btn-info' name='form3_btn'>Permission</button></div>
-       <div class='col-md-3'><button type='submit' class='btn btn-info'name='form4_btn'>Calculation Sheet</button> </div>
-        <div class='col-md-3'><button type='submit' class='btn btn-info'name='form6_btn'>Order</button></div>
-	<div class='col-md-3'><button type='submit' class='btn btn-info'name='form5_btn'>PHQ Order</button></div>";
+	 echo "<div class='col-md-3'><button type='submit' class='btn btn-info' name='form3_btn'>Forwarding Letter</button></div>
+       <div class='col-md-3'><button type='submit' class='btn btn-info'name='form4_btn'>Calculation Sheet</button> </div>";
         break;
     }
 if ($amount >= 200000 ) {

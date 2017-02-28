@@ -60,8 +60,8 @@ function get_data_for_calcSheet($id){
     <td>$row[bill_no_hosp]</td>
     <td>$row[date]</td>
     <td>$row[treatment]</td>
-    <td>$row[amt_asked]</td>
-    <td>$row[total]</td>
+    <td align='right'>$row[amt_asked]</td>
+    <td align='right'>$row[total]</td>
     </tr>";
     }
     

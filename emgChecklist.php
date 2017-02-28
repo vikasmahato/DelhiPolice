@@ -73,12 +73,10 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <select class="custom-select" name="rank" required >
                 <option value="" selected disabled>Please select</option>
                 <option value="Constable">Constable</option>
-                <option value="Senior Constable">Senior Constable</option>
                 <option value="Head Constable">Head Constable</option>
-                <option value="Assistant Sub-Inspector of Police">Assistant Sub-Inspector of Police</option>
-                <option value="Sub-Inspector of Police">Sub-Inspector of Police</option>
-                <option value="Assistant Inspector of Police">Assistant Inspector of Police</option>
-                <option value="Inspector of Police">Inspector of Police</option>
+                <option value="Assistant Sub-Inspector">Assistant Sub-Inspector</option>
+                <option value="Sub-Inspector">Sub-Inspector</option>
+                <option value="Inspector">Inspector</option>
                 <option value="Assistant Commissioner of Police">Assistant Commissioner of Police</option>
                 <option value="Additional Deputy Commissioner of Police">Additional Deputy Commissioner of Police</option>
                 <option value="Deputy Commissioner of Police">Deputy Commissioner of Police</option>

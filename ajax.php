@@ -21,11 +21,6 @@ if(!empty($_POST['type'])){
 	$result = mysqli_query($con, $query);
 	$data = array();
 	while ($row = mysqli_fetch_assoc($result)) {
-		if($category=='General'){
-            $row[$h_type] = $row[$h_type] - 0.1* $row[$h_type];
-        }else if($category=='Private'){
-            $row[$h_type] = $row[$h_type] + 0.15* $row[$h_type];
-        }
 		$name = $row['productCode'].'|'.$row['productName'].'|'.$row[$h_type];
 		array_push($data, $name);
 	}	

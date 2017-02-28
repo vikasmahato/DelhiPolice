@@ -2,10 +2,10 @@
 $string ="";
 if($value[r_cghs_no]==0)
 {
-    $string="the claimant is a CGHS beneficiary having token card No. $value[a_cghs_no] ";
+    $string="the claimant is a CGHS beneficiary having token card No.<b> $value[a_cghs_no]</b> ";
 }
 else {
-    $string="the claimant and patient are CGHS beneficiary having token cards No. $value[a_cghs_no] & $value[r_cghs_no] respectively ";
+    $string="the claimant and patient are CGHS beneficiary having token cards No.<b> $value[a_cghs_no]</b> &<b> $value[r_cghs_no]</b> respectively ";
 }
 $form2 ="<html lang='en'>
   <head>
@@ -25,15 +25,15 @@ $form2 ="<html lang='en'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
     <script src='js/bootstrap.min.js'></script>
       <div class='container'>
-          <div>FR:- &nbsp;&nbsp;&nbsp;&nbsp; Dairy No. $value[diary_no] / Genl. Br. (SED) dated $value[diary_date]</div>
-          <div>SUBJECT:- &nbsp; &nbsp; Regarding reimbursement of Medical Claim in Respect of $value[applicant_name] No. $value[police_station_no]</div>
-          <p style='text-indent:17%;text-align:justify;'>FR along with its enclosure may kindly be perused vide which $value[applicant_name] No. $value[police_station_no] has stated that he/she/his/her $value[relation] (relation with the principal employee) had taken treatment/test at $value[ref_hospital_name] (Name of Hospital/Lab) which is on panel of CGHS after referred from $value[hospital_name](Name of the CGHS wellness center/Govt. Hospital) and taken prior permission of HOO. He has further stated that an amounting to Rs. $value[amt_asked]/- was incurred on his/her treatment. Now he has requested to reimburse the same as per rules/instructions.
+          <div>FR:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Dairy No. $value[diary_no] / Genl. Br. (SED) dated $value[diary_date]</div>
+          <div>SUBJECT:- &nbsp; &nbsp; Regarding reimbursement of Medical Claim in respect of<b> $value[rank] $value[applicant_name] No. $value[police_station_no]</b></div>
+          <p style='text-indent:17%;text-align:justify;'>FR along with its enclosure may kindly be perused vide which<b> $value[rank] $value[applicant_name] No. $value[police_station_no]</b> has stated that he/she/his/her<b> $value[relation]</b> (relation with the principal employee) had taken treatment/test at<b> $value[ref_hospital_name]</b> (Name of Hospital/Lab) which is on panel of CGHS after referred from<b> $value[hospital_name]</b>(Name of the CGHS wellness center/Govt. Hospital) and taken prior permission of HOO. He has further stated that an amounting to<b> Rs. $value[amt_asked]/-</b> was incurred on his/her treatment. Now he has requested to reimburse the same as per rules/instructions.
           </p>
           <p style='text-indent:17%;text-align:justify;'>
-          In this regard. It is submitted that $string and valid up to $value[a_cghs_exp]. Accordingly, we have prepared a calculation sheet on the basis of rates approved by the CGHS time to time and Rs $value[amt_granted]/- has been found admissible.
+          In this regard. It is submitted that $string and valid up to<b> $value[a_cghs_exp]</b>. Accordingly, we have prepared a calculation sheet on the basis of rates approved by the CGHS time to time and <b>Rs $value[amt_granted]/-</b> has been found admissible.
           </p>
           <p style='text-indent:17%;text-align:justify;'>
-          The Addl. DCP/SED may like to accord ex-post facto sanction of an amounting to Rs $value[amt_granted]/- ( Rupees $rupee_word ) for making payment to him/her on account of expenditure incurred by him/her on the treatment as mentioned at para 1/N above.
+          The Addl. DCP/SED may like to accord ex-post facto sanction of an amounting to<b> Rs $value[amt_granted]/- ( Rupees $rupee_word )</b> for making payment to him/her on account of expenditure incurred by him/her on the treatment as mentioned at para 1/N above.
           </p>
           <p style='text-indent:17%;text-align:justify;'>
           Funds are available under head 01.01.06 Medical Treatment during the current financial year 2016-17.

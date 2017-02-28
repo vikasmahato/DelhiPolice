@@ -11,9 +11,9 @@ $(".addmore").on('click',function(){
     html += '<td><input type="date" data-type="date" name="itemDate[]" id="itemDate_'+i+'" class="form-control autocomplete_txt" autocomplete="off"></td>';
 	html += '<td><input type="text" data-type="productName" name="itemName[]" id="itemName_'+i+'" class="form-control autocomplete_txt" autocomplete="off"></td>';
     
-    html += '<td><input type="number" name="total_asked[]" id="total_asked_'+i+'" class="form-control totalAskedPrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>';
+    html += '<td><input type="number" step="any" name="total_asked[]" id="total_asked_'+i+'" class="form-control totalAskedPrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>';
     
-	html += '<td><input type="text" name="total[]" id="total_'+i+'" class="form-control totalLinePrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>';
+	html += '<td><input type="number" step="any" name="total[]" id="total_'+i+'" class="form-control totalLinePrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>';
 	html += '</tr>';
 	$('table').append(html);
 	i++;
@@ -143,7 +143,7 @@ specialKeys.push(8,46); //Backspace
 function IsNumeric(e) {
     var keyCode = e.which ? e.which : e.keyCode;
     console.log( keyCode );
-    var ret = ((keyCode >= 48 && keyCode <= 57) || specialKeys.indexOf(keyCode) != -1);
+    var ret = ((keyCode >= 45 && keyCode <= 57) || specialKeys.indexOf(keyCode) != -1);
     return ret;
 }
 

@@ -18,14 +18,14 @@ $form7 = "<html lang='en'>
     <script src='js/bootstrap.min.js'></script>
       <div class='container' style='margin:30px 50px 20px 20px; font-size:1.0em;'>
           <h3 style='text-align:center;'><b><u>OFFICE OF THE DEPUTY COMMISIONER OF POLICE SOUTH EAST DISTRICT, IST FLOOR, POLICE STATION SARITA VIHAR, NEW DELHI-110076.</u></b></h3>
-          <div style='text-align:center'>No. $value[id_no] / Genl. Br. (SED) dated New Delhi, the ________________ /2016.</div>
+          <div style='text-align:center'>No. __________ / Genl. Br. (SED) dated New Delhi, the ________________ /2017.</div>
         <div>To</div>
         <div style='margin-top:10px;margin-left:75px;'>The Deputy Commissioner of Police</div>
         <div style='margin-bottom:10px;margin-left:75px;'>General Administration/PHQ, Delhi</div>
-          <div>Subject:- &nbsp; &nbsp; Regarding medical re-imbursement claim in respect of $value[applicant_name] No. $value[id_no].</div>
+          <div>Subject:- &nbsp; &nbsp; Regarding medical re-imbursement claim in respect of <b>$value[rank] $value[applicant_name] No. $value[police_station_no]</b>.</div>
         <div style='margin-top:10px;'>Memo</div>
           <p style='text-indent:12%'>
-              Enclosed please find herewith a medical re-imbursement claim along with all the original papers in respect of $value[applicant_name] No. $value[id_no] vide wich she/he has intimated that the condition of his/her $value[relation] has suddenly become deteriorated and she/he was admitted in private hospital in emergency.  As per the M.A. Rules, calculation sheet has been prepared which is enclosed herewith.</p>
+              Enclosed please find herewith a medical re-imbursement claim along with all the original papers in respect of <b>$value[applicant_name] No. $value[id_no] </b>vide wich she/he has intimated that the condition of his/her <b>$value[relation]</b> has suddenly become deteriorated and she/he was admitted in private hospital in emergency.  As per the M.A. Rules, calculation sheet has been prepared which is enclosed herewith.</p>
       <table class='table'>
     <tbody>
       <tr>

@@ -73,11 +73,10 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <select class="custom-select" name="rank" required >
                 <option value="" selected disabled>Please select</option>
                 <option value="Constable">Constable</option>
-                <option value="Senior Constable">Senior Constable</option>
                 <option value="Head Constable">Head Constable</option>
-                <option value="Assistant Sub-Inspector of Police">Assistant Sub-Inspector of Police</option>
-                <option value="Sub-Inspector of Police">Sub-Inspector of Police</option>
-                <option value="Inspector of Police">Inspector of Police</option>
+                <option value="Assistant Sub-Inspector">Assistant Sub-Inspector</option>
+                <option value="Sub-Inspector">Sub-Inspector</option>
+                <option value="Inspector">Inspector</option>
                 <option value="Assistant Commissioner of Police">Assistant Commissioner of Police</option>
                 <option value="Additional Deputy Commissioner of Police">Additional Deputy Commissioner of Police</option>
                 <option value="Deputy Commissioner of Police">Deputy Commissioner of Police</option>
@@ -118,20 +117,20 @@ if($_SESSION["sess_userrole"]!="dealing"){
             <span class="input-group-addon" id="basic-addon3">Enter the Hospital Name:</span>
             <input type="text" class="form-control" id="basic-url" name="hospitalName" placeholder="Hospital Name" required >
          </div>
-         <div class="input-group">
-            <span class="input-group-addon" id="basic-addon3">Enter the Hospital Address:</span>
-            <input type="text" class="form-control" id="basic-url" name="hospitalAddress" placeholder="Address" required >
-         </div>
+         
+            
+            <input type="hidden" class="form-control" id="basic-url" name="hospitalAddress" value="hosp" >
+       
          <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Enter Diary No:</span>
             <input type="text" class="form-control" id="diary" name="diaryNo" placeholder="Diary No" required >
             <span class="input-group-addon" id="dated">/Genl. Branch/SED dated</span>
             <input type="date" class="form-control" id="diary" name="diaryDate" required >
          </div>
-         <div class="input-group">
-            <span class="input-group-addon" id="basic-addon3">Enter Referred Hospital Name:</span>
-            <input type="text" class="form-control" id="basic-url" name="refHospitalname" placeholder="Referred Hospital Name" required >
-         </div>
+        
+            
+            <input type="hidden" class="form-control" id="basic-url" name="refHospitalname" value="refHospName" >
+    
          <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">Enter the CGHS No of Applicant:</span>
             <input type="number" class="form-control" id="basic-url" name="appCGHSno" placeholder="Applicant CGHS Number" required >
