@@ -37,12 +37,13 @@ text-align:center;
       <div class='container' style='margin-top:15px; font-size:1.3em;'>
           <h3 style='text-align:center;'><b><u>OFFICE OF THE DEPUTY COMMISIONER OF POLICE SOUTH EAST DISTRICT,</u></b></h3>
           <h3><u><b>IST FLOOR, POLICE STATION SARITA VIHAR, NEW DELHI-110076.</u></b></h3>
-          <div style='text-align:center'>No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / Genl. Br. (SED) dated New Delhi, the </div>
+          <div style='text-align:justify'>No.____________/ Genl. Br. (SED) dated New Delhi, the ____________/2017. </div>
         <div>To</div>
         <div style='margin-top:15px;margin-left:92px;'>The Deputy Commissioner of Police</div>
         <div style='margin-bottom:10px;margin-left:92px;'>General Administration/PHQ, Delhi</div>
-          <div>Subject:- <br>
-          <p style='margin-left:100px;padding-top=0px;margin-top=0px;'>Regarding medical re-imbursement claim in respect of <b> $value[applicant_name] No. $value[police_station_no].</b></p></div>
+        <div class='row'>
+          <div class='col-md-2' style='margin-bottom:0px;padding-bottom:0px;'>Subject:-</div>
+          <div class='col-md-10'style='margin-left:100px;padding-top=0px;margin-top=0px;'>Regarding medical re-imbursement claim in respect of <b> $value[applicant_name] No. $value[police_station_no].</b></div></div>
         <div style='margin-top:10px;'>Memo</div>
           <p style='text-indent:12%;text-align:justify;'>
               Enclosed please find herewith a medical re-imbursement claim along with all the original papers in respect of <b>$value[applicant_name] No. $value[police_station_no]</b> vide which she/he has intimated that the condition of his/her<b> $value[relation] </b>has suddenly become deteriorated and she/he was admitted in private hospital in emergency.  As per the M.A. Rules, calculation sheet has been prepared which is enclosed herewith.</p>
