@@ -37,7 +37,15 @@ $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbh->exec($sql);
     
     for($x = 0; $x < $arrlength; $x++) {
-        
+         
+         if($itemNo[$x]=='')
+         {
+             $itemNo[$x]=0;
+         }
+        if($itemHosp[$x]=='')
+         {
+             $itemHosp[$x]=' ';
+         }
          $sql3 = "INSERT INTO medical (app_id, s_no, treatment, total, bill_no_hosp, date, amt_asked) VALUES ('$appid','$itemNo[$x]', '$itemName[$x]', '$totalGranted[$x]', '$itemHosp[$x]', '$itemDate[$x]','$totalAsked[$x]')";
         
          $dbh->exec($sql3);

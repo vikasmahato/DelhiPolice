@@ -106,7 +106,7 @@ if($_SESSION["sess_userrole"]!="dealing"){
 							<td><input class="case" type="checkbox"/></td>
 							<td><input type="text" data-type="productCode" name="itemNo[]" id="itemNo_1" class="form-control autocomplete_txt" autocomplete="off"></td>
                             <td><input type="text" data-type="hospName" name="itemHosp[]" id="itemHosp_1" class="form-control" autocomplete="off"></td>
-                            <td><input type="date" data-type="date" name="itemDate[]" id="itemDate_1" class="form-control" autocomplete="off"></td>
+                            <td><input type="date" data-type="date" name="itemDate[]" id="itemDate_1" class="form-control" autocomplete="off" required></td>
 							<td><input type="text" data-type="productName" name="itemName[]" id="itemName_1" class="form-control autocomplete_txt" autocomplete="off"></td>
                             <td><input type="number" step="any" name="total_asked[]" id="total_asked_1" class="form-control totalAskedPrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>
 							<td><input type="number" step="any" name="total[]" id="total_1" class="form-control totalLinePrice" autocomplete="off" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;"></td>
