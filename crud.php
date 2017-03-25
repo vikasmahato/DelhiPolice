@@ -49,13 +49,9 @@ function delete($user, $id, $comment){
     try{
         require 'database-config.php';
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $comment = $comment + " Re-evaluation by $user";
+        $comment = $comment + " Rejected by $user";
         
-        if($_SESSION["sess_userrole"]!="hag") $stat = 'REEVAL_HAG';
-        else if($_SESSION["sess_userrole"]!="acp") $stat = 'REEVAL_ACP';
-        else if($_SESSION["sess_userrole"]!="iadmin") $stat = 'REEVAL_IADMIN';
-        
-        $sql = "UPDATE form SET status='$stat' WHERE app_id=$id";
+        $sql = "UPDATE form SET status='FAILED' WHERE app_id=$id";
 
         $stmt = $dbh->prepare($sql);
         $stmt->execute();

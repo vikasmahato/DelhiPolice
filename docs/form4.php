@@ -1,6 +1,6 @@
 <?php
 $string ="";
-if($value[r_cghs_no]!=0)
+if($value['r_cghs_no']!=0)
 {
     $string="___________________________ (Name of the patient) W/O, S/O, D/O, F/O, M/O $value[rank] $value[applicant_name] (Name of the police officer/men) ";
 }
@@ -36,15 +36,15 @@ table {
        <h3>CALCULATION SHEET</h3>
           <p style='text-align:justify;'>Details of expenditures incurred on the treatment of<b> $string Belt No. $value[police_station_no] at $value[hospital_name] (Name of the Hospital)</b> where he/she remained admitted/under treatment from<b> $value[startdate] to $value[enddate](yy-mm-dd)</b>.
           </p>
-       <table class='table'>
+       <table class='table' style='margin-right:3px;'>
       <tbody>
       <tr>
         <td width='2%'>Sr. No.</td>
-        <td width='23%'>Bill no. &<br> Name of the Hospital</td>
+        <td width='20%'>Bill no. &<br> Name of the Hospital</td>
         <td width='15%'>Date of Bill</td>
-        <td width='40%'>Name of the Tests/<br>Medicines etc.</td>
-        <td width='10%'>Amount <br> claimed</td>
-        <td width='10%'>Admissible <br> Amount</td>
+        <td width='35%'>Name of the Tests/<br>Medicines etc.</td>
+        <td width='14%'>Amount <br> claimed</td>
+        <td width='14%'>Admissible <br> Amount</td>
       </tr>
      $data
      <tr>
@@ -59,9 +59,9 @@ table {
   </table>
 <p style='text-indent:12%;text-align:justify;'>It is certified that the bills have been checked in totality and rates claimed by the treating hospitals are Matched/restricted to CGHS approved rates. The claim for the tests/pathology is cross referenced for checking the rates with the tests actually conducted.</p>
 <div style='margin-top:20px;'>Signature of Dealing Assistant     ____________________</div>
-<div style='margin-top:20px;'>Signature of Head Assistant         ____________________</div>
-<div style='margin-top:20px;'>Signature of Inspector Administration___________________</div>
-<div style='text-align:center;margin-bottom:30px;margin-top:40px;'>VERIFIED</div>
+<div style='margin-top:10px;'>Signature of Head Assistant         ____________________</div>
+<div style='margin-top:10px;'>Signature of Inspector Administration___________________</div>
+<div style='text-align:center;margin-bottom:10px;margin-top:10px;'>VERIFIED</div>
 <div style='text-align:center;font-weight:bold'>ASSTT. COMMISIONER OF POLICE (HQ),</div>
 <div style='text-align:center;font-weight:bold'>SOUTH-EAST DISTRICT, NEW DELHI.</div>
 </div>

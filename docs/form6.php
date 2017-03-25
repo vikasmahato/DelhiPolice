@@ -13,8 +13,8 @@ $form6 = "<html lang='en'>
     <script src='js/bootstrap.min.js'></script>
       <div class='container' style=margin-top:40px; font-size:1.3em;'>
       <div style='text-align:center; margin-bottom:25px;'><b><u>ORDER</u></b></div> 
-          <p style='text-indent:12%;text-align:justify;'>The Additonal Deputy Commissioner of Police/Head of Office, South-East District, New Delhi is pleased to accord ex-post-facto sanction of Rs. $value[amt_granted]/-(Rupees $rupee_word ) for making payment to the Medical Superintendent of $value[hospital_name] hospital at approved rate of CGHS for the treatment of $value[disease].</p>
-          <p style='text-indent:12%;text-align:justify;'>Funds to the extent of Rs. $value[amt_granted]/-are available under head '01.01.06 Medical Treatment' during the financial year 2017-2018.</p>
+          <p style='text-indent:12%;text-align:justify;'>The Additonal Deputy Commissioner of Police/Head of Office, South-East District, New Delhi is pleased to accord ex-post-facto sanction of<b> Rs. $value[amt_granted]/-(Rupees $rupee_word )</b> for making payment to the Medical Superintendent of $value[hospital_name] hospital at approved rate of CGHS for the treatment of <b>$value[disease]</b>.</p>
+          <p style='text-indent:12%;text-align:justify;'>Funds to the extent of<b> Rs. $value[amt_granted]/-</b>are available under head '01.01.06 Medical Treatment' during the financial year 2016-2017.</p>
          <div style='margin-top:60px; text-align:right;'><b>ACP/HQ</b></div>
        <div style='text-align:right;'>FOR ADDL. DY. COMMISSIONER OF POLICE,</div>
         <div style='margin-bottom:15px; text-align:right;'>SOUTH-EAST DISTRICT, NEW DELHI.</div>

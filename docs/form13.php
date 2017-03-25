@@ -36,15 +36,15 @@ $form13 = "<html lang='en'>
         <div style='margin-top:10px;'>No.__________/ Genl. Br. (SED) dated New Delhi, the___________/2017 </div>
         <div>To,</div>
         <div><div style='margin-left:100px;'>The Medical Superintendent,</div>
-        <div style='margin-left:100px;'>$value[ref_hospital_name]</div>
-        <div style='margin-left:100px;'>$value[hospital_address]</div>
+        <div style='margin-left:100px;'><b>$value[ref_hospital_name]</b></div>
+        <div style='margin-left:100px;'><b>$value[hospital_address]</b></div>
         </div>
         <div style='margin-top:20px;'>Subject:- &nbsp;&nbsp;&nbsp;Regarding permission for taking treatment in respect of
-        <div style='margin-left:100px;margin-top:20px;'>$string1 $value[rank] $value[applicant_name], No. $value[police_station_no] (PIS: $value[pis])</div>
+        <div style='margin-left:100px;margin-top:20px;'><b>$string1 $value[rank] $value[applicant_name], No. $value[police_station_no] (PIS: $value[pis])</b></div>
         <div>Sir,</div>
         <p style='text-indent:12%;text-align:justify;'>
-            In accordance with Ministry of Health & Family Welfare, Govt. Of India, Nirman Bhawan, New Delhi's O.M. No. S.11011/23/2009-CGHS D.II/Hospital Cell/CGHS(Part-1), dated 17.08.2010 at para-4 on the subject cited above. The Addl. Deputy Commissioner of Police (H.O.O.) South-East District, New Delhi is pleased to accord permission to $value[applicant_name] No. $value[police_station_no] (PIS No. $value[pis]) for treatment in respect of his/her $value[relation] at above said Hospital for a period of______________ w.e.f. $value[startdate].</p>
-          <p style='text-indent:12%;text-align:justify;'>He/She is a member of CGHS having token card No. $string2. He/She is entitled for $value[a_cghs_category] ward category.</p>
+            In accordance with Ministry of Health & Family Welfare, Govt. Of India, Nirman Bhawan, New Delhi's O.M. No. S.11011/23/2009-CGHS D.II/Hospital Cell/CGHS(Part-1), dated 17.08.2010 at para-4 on the subject cited above. The Addl. Deputy Commissioner of Police (H.O.O.) South-East District, New Delhi is pleased to accord permission to <b>$value[applicant_name] No. $value[police_station_no] (PIS No. $value[pis])</b> for treatment in respect of his/her <b>$value[relation]</b> at above said Hospital for a period of______________ w.e.f. <b>$value[startdate]</b>.</p>
+          <p style='text-indent:12%;text-align:justify;'>He/She is a member of CGHS having token card No. <b>$string2</b>. He/She is entitled for <b>$value[a_cghs_category]</b> ward category.</p>
       <div style='text-align:right;margin-bottom:40px;margin-top:30px;'>Yours faithfully,</div>
       <div style='text-align:right;margin-top:60px;'>ASSTT. COMMINISSONER OF POLICE (HQ),</div>
       <div style='text-align:right'>SOUTH EAST DISTRICT, NEW DELHI.</div>

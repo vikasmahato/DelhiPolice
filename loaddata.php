@@ -43,7 +43,7 @@ $query_for = $_POST['user_name'];
             elseif($query_for=="ACP")
             { get_query($row,$dbh); }
             elseif($query_for=="DCP")
-            { get_query($row,$dbh); }
+            { get_query_dcp($row,$dbh); }
             elseif($query_for=="OVERVIEW")
             {
                 get_query_overview($row,$dbh); 
@@ -468,6 +468,88 @@ function get_query_phq($row,$dbh) {
                             <div class='form-group panel-body'>
                                 <button type='submit' name='memo_btn' class='btn btn-success'>Approve</button>
                                 <button type='submit' name='reval_btn' class='btn btn-warning'>Re-Eval</button>
+                      </form>
+                  </div>
+                  
+                    </div>
+                </div>
+              </div>
+            </div>";
+            
+    }
+    catch(PDOException $e) {
+        echo $sql . "<br>" . $e->getMessage();
+    }
+
+    $conn = null;
+}
+
+function get_query_dcp($row,$dbh) {
+    
+    try {   
+    
+        $sid= $row['app_id'];
+             $row['amt_asked'] == "" ? $amt='N/A' : $amt=$row['amt_asked'];
+            if($row['status']=="HAG"||$row['status']=="REEVAL_HAG") {$length = 20; $status="HAG";}
+            elseif($row['status']=="PHQ") {$length = 20; $status="PHQ";}
+            elseif($row['status']=="I_ADMIN"||$row['status']=="REEVAL_IADMIN") {$length = 40;$status="Ins. Admin";}
+            elseif($row['status']=="ACP"||$row['status']=="REEVAL_ACP") {$length = 60;$status="ACP";}
+            elseif($row['status']=="DCP"||$row['status']=="REEVAL_DCP") {$length = 80;$status="DCP";}
+            elseif($row['status']=="APPROVED") {$length = 100;$status="APPROVED";}
+            
+            $medical = "";
+            $panelid =$sid."query";
+            $comment = "";
+            
+            $sql1= "SELECT * FROM medical WHERE app_id=$sid";
+            foreach($dbh->query($sql1) as $row1){
+                $medical = $medical."<b>$row1[treatment]</b> : $row1[total]<br>";
+            }
+            $sql2= "SELECT * FROM comments WHERE app_id=$sid";
+            foreach($dbh->query($sql2) as $row2){
+                $comment = $comment."<div class='panel-body'><b>$row2[user_id]</b> : $row2[comment]</div>";
+            }
+        
+            echo "<div class='container'>
+              <div class='panel-group'>
+                <div class='panel panel-default'>
+                  <div class='panel-heading'>
+                    <h4 class='panel-title'>
+                      <a data-toggle='collapse' href='#$panelid'><b>$row[applicant_name]</b></a>&emsp;$row[claim_type]
+                    </h4>
+                  </div>
+                   <div id='$panelid' class='panel-collapse collapse'>
+                   <div class='progress'>
+    <div class='progress-bar' role='progressbar' aria-valuemin='0' aria-valuemax='100' style='width:$length%'>
+      $status
+    </div>
+  </div>
+                      <div class='row'><div class='col-md-12'><div class='panel-body'> $medical</div></div></div>
+                     <div class='row'><div class='col-md-12'> $comment</div></div>
+                    <div class='row'>
+                    <div class='col-md-6'>
+                    <div class='panel-body'><b>Rank</b> : $row[rank]<br>
+                    <b> Relation </b>:  $row[relation]<br>
+                    <b> Hospital Name </b>:  $row[hospital_name]<br>
+                    <b> Police Station No. </b>:  $row[police_station_no]</div>
+                    </div>
+                    <div class='col-md-6'>
+                    <div class='panel-body'><b>Diary No </b> : $row[diary_no]<br>
+                    <b> CGHS Category </b>:  $row[a_cghs_category]<br>
+                    <b> Disease </b>:  $row[disease]<br>
+                    <b> Applicate Date </b>:  $row[application_date]<br>
+                    <b> Amount asked </b>:  $amt </div>  </div> </div>
+                    <form class='form-horizontal panel-body' role='form' id='formfield' method='POST' action='update.php' style='margin-left:0px'>
+                    <div class='form-group' >
+                     <label for='inputComment' class='col-md-1 control-label'>Comments</label>
+                    <div class='col-md-11'>
+                     <input type='text' class='form-control' id='inputComment' name='inputComment' placeholder='Comment' />
+                    </div>
+                    </div>
+                    <input type='hidden' name='sid' value='$sid'>
+                            <div class='form-group panel-body'>
+                                <button type='submit' name='approve_btn' class='btn btn-success'>Approve</button>
+                                <button type='submit' name='reval_btn' class='btn btn-warning'>Re-Eval</button><button type='submit' name='deny_btn' class='btn btn-danger'>Deny</button>
                       </form>
                   </div>
                   

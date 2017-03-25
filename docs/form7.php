@@ -68,7 +68,7 @@ text-align:center;
     </tbody>
   </table>
     <p style='text-indent:12%;text-align:justify;'>
-        It is therefore, requested that his/her medical re-imbursement claim may be considered sympathetically and necessary ex-post facto permission/ sanction of the competent authority may kindly be obtained and conveyed to this office at an early date. Funds are available under head '01.01.06 Medical Treament' during the current financial year 2017-2018. </p>
+        It is therefore, requested that his/her medical re-imbursement claim may be considered sympathetically and necessary ex-post facto permission/ sanction of the competent authority may kindly be obtained and conveyed to this office at an early date. Funds are available under head '01.01.06 Medical Treament' during the current financial year 2016-2017. </p>
 <div style='text-align:right;font-weight:bold;margin-top:50px;'>ACP/HQ</div>
 <div class='row'>
     <div class='col-md-4'>Encls.:- <strong><u>As above</u></strong></div>

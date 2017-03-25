@@ -22,7 +22,7 @@ table {
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
     <script src='js/bootstrap.min.js'></script>
       <div class='container' style='font-size:1.1em;'>
-      <div>FR:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHQ's memo No.$value[phq_memo]/Admn.(1V)/PHQ, dated $value[phq_memo_date] , recieved from ACP/HQ,(G), Delhi</div>
+      <div>FR:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHQ's memo No.<b>$value[phq_memo]</b>/Admn.(1V)/PHQ, dated <b>$value[phq_memo_date]</b> , recieved from ACP/HQ,(G), Delhi</div>
           <div  style='margin-top:8px;'>Subject:- <b>&nbsp;&nbsp;Reimbursement of medical claim in respect of the following police personnel treatment taken from CGHS recognized hospitals in emergency.</b></div> 
       <p style='text-indent:12%;text-align:justify;'>FR may kindly be persued vide which ACP/HQ (G), Delhi has conveyed ex-post-facto permission(s) of the Spl. Comissioner of Police/General administration, Delhi in accordance with CGHS instruction issued vide memo No. S-12020/4/97-CGHS(P) dated 07.03.2000 circulated vide PHQ's endst. No. 7692-8032/Admin. (1V)PHQ, dated 11.04.2000 for the period as noted against each for treatment taken by their own/dependent family members in CGHS recognized hospitals in emergency:-</p>
       <table>
