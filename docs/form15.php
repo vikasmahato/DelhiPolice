@@ -14,7 +14,7 @@ $form15 = "<html lang='en'>
       <div class='container' style='margin-bottom:70px; margin-top:40px; font-size:1.3em;'>
       <div style='text-align:center; margin-bottom:25px;'><b><u>ORDER</u></b></div> 
           <p style='text-indent:12%;text-align:justify;'>The Additonal Dy. Commissioner of Police/Head of Office, South-East District, New Delhi is pleased to accord ex-post-facto sanction of an amounting to<b> Rs. $value[amt_granted]/-(Rupees $rupee_word )</b> for making payment to<b> $value[rank]  $value[applicant_name] No. $value[police_station_no]</b> at approved rate of CGHS for the medical treatment of his/her<b> $value[relation].</b></p>
-          <p style='text-indent:12%;text-align:justify;'>Funds to the extent of<b> Rs. $value[amt_granted]/-</b>are available under head '01.01.06 Medical Treatment' during the current financial year 2016-2017.</p>
+          <p style='text-indent:12%;text-align:justify;'>Funds to the extent of<b> Rs. $value[amt_granted]/-</b>are available under head '01.01.06 Medical Treatment' during the current financial year 2017-2018.</p>
          <div style='margin-top:60px; text-align:right;'><b>ACP/HQ</b></div>
        <div style='text-align:right;'>FOR ADDL. DY. COMMISSIONER OF POLICE,</div>
         <div style='margin-bottom:15px; text-align:right;'>SOUTH-EAST DISTRICT, NEW DELHI.</div>

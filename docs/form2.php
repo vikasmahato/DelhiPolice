@@ -36,7 +36,7 @@ $form2 ="<html lang='en'>
           The Addl. DCP/SED may like to accord ex-post facto sanction of an amounting to<b> Rs $value[amt_granted]/- ( Rupees $rupee_word )</b> for making payment to him/her on account of expenditure incurred by him/her on the treatment as mentioned at para 1/N above.
           </p>
           <p style='text-indent:17%;text-align:justify;'>
-          Funds are available under head 01.01.06 Medical Treatment during the current financial year 2016-17.
+          Funds are available under head 01.01.06 Medical Treatment during the current financial year 2017-18.
           </p>
           <p style='text-indent:17%;text-align:justify;'>
           Submitted for kind perusal and para 3N above may kindly be approved please.

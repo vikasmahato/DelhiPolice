@@ -43,7 +43,7 @@ table {
      </table>
       <p style='text-indent:12%'>The admissible amount has been calculated as per CGHS rate list dated 17.08.2010 & 01.10.2014 to make payment to above police personnelaccording to their entitlement.</p>  
        <p style='text-indent:12%;text-align:justify;'>Keeping in view of the above, the Additional Deputy Commisioner of Police, South-East District may like to accord ex-post-facto sanction of the amount as mentioned above against each police officers/men for making payment to him/them.</p>  
-       <p style='text-indent:12%;text-align:justify;'>The expenditure involved should be met from the funds under head '01.01.06 Medical Treatment' during the current financial year 2016-2017.</p>  
+       <p style='text-indent:12%;text-align:justify;'>The expenditure involved should be met from the funds under head '01.01.06 Medical Treatment' during the current financial year 2017-2018.</p>  
        <p style='text-indent:12%'>Submitted for kind perusal and para 3/N above may kindly be approved please.</p>  
       <div style='margin-top:30px;'><b><u>HAG/SE</u></b></div>
       <div style='margin-top:15px;'><b><u>INSPR. ADMN.</u></b></div>
